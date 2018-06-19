@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PMSModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="PMSEntities">
+    <EntitySet Name="Sys_UserTB" EntityType="PMSModel.Sys_UserTB" />
+    <EntitySet Name="Sys_ConfigTB" EntityType="PMSModel.Sys_ConfigTB" />
+    <EntitySet Name="Sys_RenewalTB" EntityType="PMSModel.Sys_RenewalTB" />
+  </EntityContainer>
+  <EntityType Name="Sys_UserTB">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Account" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PassWord" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FailureDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsOnline" Type="Boolean" />
+    <Property Name="UserTel" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserPermission" Type="Int32" />
+    <Property Name="StateCode" Type="Boolean" />
+    <Property Name="LastedIP" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Type="DateTime" Name="UpdateDateTime" Precision="3" />
+    <Property Name="FilePermission" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Sys_ConfigTB">
+    <Key>
+      <PropertyRef Name="ConfigID" />
+    </Key>
+    <Property Type="Int32" Name="ConfigID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ConfigCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ConfigValue" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Sys_RenewalTB">
+    <Key>
+      <PropertyRef Name="RenewalID" />
+    </Key>
+    <Property Type="Int32" Name="RenewalID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Account" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TradeNO" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreateDateTime" Precision="3" />
+    <Property Type="Boolean" Name="StateCode" />
+    <Property Type="String" Name="RenewalWay" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

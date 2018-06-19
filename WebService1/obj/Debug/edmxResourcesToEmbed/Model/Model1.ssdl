@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="XNetModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="XNetModelStoreContainer">
+    <EntitySet Name="MTMS_BarCodeSNTB" EntityType="XNetModel.Store.MTMS_BarCodeSNTB" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MTMS_MaterialTB" EntityType="XNetModel.Store.MTMS_MaterialTB" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="MTMS_BarCodeSNTB">
+    <Key>
+      <PropertyRef Name="BarCodeSN" />
+    </Key>
+    <Property Name="BarCodeSN" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="SummonsNumber" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MaterialCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="HashKey" Type="int" StoreGeneratedPattern="Computed" />
+    <Property Name="FactoryCode" Type="varchar" MaxLength="50" />
+    <Property Name="StatusCode" Type="bit" />
+  </EntityType>
+  <EntityType Name="MTMS_MaterialTB">
+    <Key>
+      <PropertyRef Name="MaterialCode" />
+    </Key>
+    <Property Name="MaterialCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MaterialTypeCode" Type="varchar" MaxLength="10" />
+    <Property Name="ProductTypeCode" Type="varchar" MaxLength="20" />
+    <Property Name="MaterialName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Standard" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+    <Property Name="StockUnit" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="PackageCount" Type="int" Nullable="false" />
+    <Property Name="SourceCode" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="CreatorAccount" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateDateTime" Type="datetime" Nullable="false" />
+    <Property Name="MaxIndex" Type="int" Nullable="false" />
+    <Property Name="ManufacturerTypeID" Type="int" />
+    <Property Name="MPOSProperty" Type="varchar" MaxLength="50" />
+    <Property Name="HardwareConfig" Type="varchar" MaxLength="50" />
+    <Property Name="MaterialClassID" Type="varchar" MaxLength="50" />
+    <Property Name="MaterialClassName" Type="varchar" MaxLength="50" />
+    <Property Name="MaterialSubClassID" Type="varchar" MaxLength="50" />
+    <Property Name="MaterialSubClassName" Type="varchar" MaxLength="50" />
+    <Property Name="HashKey" Type="int" StoreGeneratedPattern="Computed" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,182 @@
+ 
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ PreCreate ]
+ 异常行号：[ 77行 ]
+ 记录时间：[ 2018-06-13 15:24:53,335 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.BuildPrecreateContent(String account, String fileCoverID) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Common\Common.cs:行号 399
+   在 DownLoad.BLL.AliPay.AliPayWebService.PreCreate(String account, String fileCoverId) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs:行号 40 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ PreCreate ]
+ 异常行号：[ 77行 ]
+ 记录时间：[ 2018-06-13 15:25:33,712 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.BuildPrecreateContent(String account, String fileCoverID) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Common\Common.cs:行号 399
+   在 DownLoad.BLL.AliPay.AliPayWebService.PreCreate(String account, String fileCoverId) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs:行号 40 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ PreCreate ]
+ 异常行号：[ 77行 ]
+ 记录时间：[ 2018-06-13 15:26:40,188 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.BuildPrecreateContent(String account, String fileCoverID) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Common\Common.cs:行号 399
+   在 DownLoad.BLL.AliPay.AliPayWebService.PreCreate(String account, String fileCoverId) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs:行号 40 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ PreCreate ]
+ 异常行号：[ 77行 ]
+ 记录时间：[ 2018-06-13 15:28:16,285 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.BuildPrecreateContent(String account, String fileCoverID) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Common\Common.cs:行号 399
+   在 DownLoad.BLL.AliPay.AliPayWebService.PreCreate(String account, String fileCoverId) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs:行号 40 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ PreCreate ]
+ 异常行号：[ 77行 ]
+ 记录时间：[ 2018-06-13 15:34:52,443 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.BuildPrecreateContent(String account, String fileCoverID) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Common\Common.cs:行号 400
+   在 DownLoad.BLL.AliPay.AliPayWebService.PreCreate(String account, String fileCoverId) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs:行号 40 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Common\Common.cs ]
+异常方法：[ RecordPreRenewal ]
+ 异常行号：[ 436行 ]
+ 记录时间：[ 2018-06-13 15:58:47,285 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Common.Common ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ELinq.ExpressionConverter.NewTranslator.TypedTranslate(ExpressionConverter parent, NewExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.EqualsTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.FirstPredicateTranslatorBase.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 DownLoad.BLL.Common.Common.RecordPreRenewal(String account, String fileCoverId, String tradeNO) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Common\Common.cs:行号 426 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ PreCreate ]
+ 异常行号：[ 77行 ]
+ 记录时间：[ 2018-06-13 15:58:47,313 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.RecordPreRenewal(String account, String fileCoverId, String tradeNO) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Common\Common.cs:行号 438
+   在 DownLoad.BLL.AliPay.AliPayWebService.PreCreate(String account, String fileCoverId) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Common\Common.cs ]
+异常方法：[ RecordPreRenewal ]
+ 异常行号：[ 436行 ]
+ 记录时间：[ 2018-06-13 15:59:26,632 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Common.Common ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ELinq.ExpressionConverter.NewTranslator.TypedTranslate(ExpressionConverter parent, NewExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.EqualsTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.FirstPredicateTranslatorBase.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 DownLoad.BLL.Common.Common.RecordPreRenewal(String account, String fileCoverId, String tradeNO) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Common\Common.cs:行号 426 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ PreCreate ]
+ 异常行号：[ 77行 ]
+ 记录时间：[ 2018-06-13 15:59:26,634 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.RecordPreRenewal(String account, String fileCoverId, String tradeNO) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Common\Common.cs:行号 438
+   在 DownLoad.BLL.AliPay.AliPayWebService.PreCreate(String account, String fileCoverId) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ QueryByOrderNo ]
+ 异常行号：[ 104行 ]
+ 记录时间：[ 2018-06-13 16:06:05,833 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[ 2018061316042800008927 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ QueryByOrderNo ]
+ 异常行号：[ 104行 ]
+ 记录时间：[ 2018-06-13 16:08:15,998 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[ 2018061316042800008927 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ CheckAndQueryFilecover ]
+ 异常行号：[ 213行 ]
+ 记录时间：[ 2018-06-13 16:26:30,510 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[ 1 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ CheckAndQueryFilecover ]
+ 异常行号：[ 213行 ]
+ 记录时间：[ 2018-06-13 16:26:50,687 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[ 1 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ CheckAndQueryFilecover ]
+ 异常行号：[ 236行 ]
+ 记录时间：[ 2018-06-13 16:31:18,278 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[ 1 ]
+ 

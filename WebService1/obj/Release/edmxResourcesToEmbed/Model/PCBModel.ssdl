@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PCBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityType Name="PCB_AccessFileTB">
+    <Key>
+      <PropertyRef Name="AccessFileID" />
+    </Key>
+    <Property Name="AccessFileID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FileCoverID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AccessFileName" Type="varchar(max)" Nullable="false" />
+    <Property Name="AccessFileURL" Type="varchar(max)" Nullable="false" />
+    <Property Name="FileExtension" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FileSize" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FileMD5" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreateAccount" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreateDateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PCB_ConfigTB">
+    <Key>
+      <PropertyRef Name="ConfigID" />
+    </Key>
+    <Property Name="ConfigID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ConfigCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ConfigValue" Type="varchar(max)" />
+    <Property Name="Remark" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="PCB_EngineerInfo">
+    <Key>
+      <PropertyRef Name="EngineerID" />
+    </Key>
+    <Property Name="EngineerID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Account" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccountName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MailAddress" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="WeChatAccount" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreateDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDateTime" Type="datetime" />
+    <Property Name="StateCode" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PCB_FileCoverTB">
+    <Key>
+      <PropertyRef Name="FileCoverID" />
+    </Key>
+    <Property Name="FileCoverID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FileCoverName" Type="varchar(max)" Nullable="false" />
+    <Property Name="FileSize" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FileExtension" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FileCoverURL" Type="varchar(max)" Nullable="false" />
+    <Property Name="FileMD5" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreateAccount" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreateDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsPublish" Type="bit" Nullable="false" />
+    <Property Name="Price" Type="varchar(max)" />
+    <Property Name="UpdateDateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PCB_OrderTB">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FileCoverID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="OrderNumber" Type="varchar(max)" Nullable="false" />
+    <Property Name="OrderPrice" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreateAccount" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreateDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsPay" Type="bit" Nullable="false" />
+    <Property Name="UpdateDateTime" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="PCBModelStoreContainer">
+    <EntitySet Name="PCB_AccessFileTB" EntityType="Self.PCB_AccessFileTB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PCB_ConfigTB" EntityType="Self.PCB_ConfigTB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PCB_EngineerInfo" EntityType="Self.PCB_EngineerInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PCB_FileCoverTB" EntityType="Self.PCB_FileCoverTB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PCB_OrderTB" EntityType="Self.PCB_OrderTB" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

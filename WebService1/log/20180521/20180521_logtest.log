@@ -1,0 +1,156 @@
+ 
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs ]
+异常方法：[ SendMail ]
+ 异常行号：[ 227行 ]
+ 记录时间：[ 2018-05-21 14:13:15,904 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Common.Common ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Net.Mime.MailBnfHelper.ReadMailAddress(String data, Int32& offset, String& displayName)
+   在 System.Net.Mail.MailAddress.ParseValue(String address)
+   在 System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   在 System.Net.Mail.MailAddress..ctor(String address)
+   在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 200 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ CreateEngineer ]
+ 异常行号：[ 271行 ]
+ 记录时间：[ 2018-05-21 14:13:22,277 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 229
+   在 DownLoad.BLL.Login.LoginWebService.CreateEngineer(String account, String accountName, String password, String phoneNo, String mailAddress, String weChatAccount) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 264 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs ]
+异常方法：[ SendMail ]
+ 异常行号：[ 227行 ]
+ 记录时间：[ 2018-05-21 14:15:17,150 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Common.Common ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Net.Mime.MailBnfHelper.ReadMailAddress(String data, Int32& offset, String& displayName)
+   在 System.Net.Mail.MailAddress.ParseValue(String address)
+   在 System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   在 System.Net.Mail.MailAddress..ctor(String address)
+   在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 200 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ CreateEngineer ]
+ 异常行号：[ 271行 ]
+ 记录时间：[ 2018-05-21 14:15:17,154 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 229
+   在 DownLoad.BLL.Login.LoginWebService.CreateEngineer(String account, String accountName, String password, String phoneNo, String mailAddress, String weChatAccount) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 264 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs ]
+异常方法：[ SendMail ]
+ 异常行号：[ 227行 ]
+ 记录时间：[ 2018-05-21 14:18:15,983 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Common.Common ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 220 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ CreateEngineer ]
+ 异常行号：[ 271行 ]
+ 记录时间：[ 2018-05-21 14:18:15,984 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 229
+   在 DownLoad.BLL.Login.LoginWebService.CreateEngineer(String account, String accountName, String password, String phoneNo, String mailAddress, String weChatAccount) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 264 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs ]
+异常方法：[ SendMail ]
+ 异常行号：[ 227行 ]
+ 记录时间：[ 2018-05-21 14:26:42,153 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Common.Common ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   在 System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, String from)
+   在 System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, SmtpFailedRecipientException& exception)
+   在 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 220 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ CreateEngineer ]
+ 异常行号：[ 271行 ]
+ 记录时间：[ 2018-05-21 14:26:42,183 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 229
+   在 DownLoad.BLL.Login.LoginWebService.CreateEngineer(String account, String accountName, String password, String phoneNo, String mailAddress, String weChatAccount) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 264 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs ]
+异常方法：[ SendMail ]
+ 异常行号：[ 228行 ]
+ 记录时间：[ 2018-05-21 14:33:48,135 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Common.Common ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   在 System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, String from)
+   在 System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, SmtpFailedRecipientException& exception)
+   在 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 221 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ CreateEngineer ]
+ 异常行号：[ 276行 ]
+ 记录时间：[ 2018-05-21 14:33:48,163 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 230
+   在 DownLoad.BLL.Login.LoginWebService.CreateEngineer(String account, String accountName, String password, String phoneNo, String mailAddress, String weChatAccount) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 259 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs ]
+异常方法：[ SendMail ]
+ 异常行号：[ 228行 ]
+ 记录时间：[ 2018-05-21 14:36:04,760 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Common.Common ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   在 System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, String from)
+   在 System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, SmtpFailedRecipientException& exception)
+   在 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 221 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ CreateEngineer ]
+ 异常行号：[ 276行 ]
+ 记录时间：[ 2018-05-21 14:36:24,115 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 230
+   在 DownLoad.BLL.Login.LoginWebService.CreateEngineer(String account, String accountName, String password, String phoneNo, String mailAddress, String weChatAccount) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 259 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs ]
+异常方法：[ SendMail ]
+ 异常行号：[ 230行 ]
+ 记录时间：[ 2018-05-21 14:51:55,619 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Common.Common ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 223 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs ]
+异常方法：[ SendMail ]
+ 异常行号：[ 230行 ]
+ 记录时间：[ 2018-05-21 14:52:25,998 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Common.Common ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   在 DownLoad.BLL.Common.Common.SendMail(String mailAddress) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 223 ]
+ 

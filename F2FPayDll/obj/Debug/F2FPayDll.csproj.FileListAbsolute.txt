@@ -1,0 +1,106 @@
+D:\CODE\DEMO0603\Projects\Alipay-demo-project\F2FPayApp\bin\Debug\F2FPayDll.dll
+D:\CODE\DEMO0603\Projects\Alipay-demo-project\F2FPayApp\bin\Debug\F2FPayDll.pdb
+D:\CODE\DEMO0603\Projects\Alipay-demo-project\F2FPayApp\bin\Debug\AopSdk.dll
+D:\CODE\DEMO0603\Projects\Alipay-demo-project\F2FPayApp\bin\Debug\ThoughtWorks.QRCode.dll
+D:\CODE\DEMO0603\Projects\Alipay-demo-project\F2FPayApp\bin\Debug\AopSdk.pdb
+D:\CODE\DEMO0603\Projects\Alipay-demo-project\F2FPayApp\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+D:\CODE\DEMO0603\Projects\Alipay-demo-project\F2FPayApp\obj\Debug\F2FPayDll.dll
+D:\CODE\DEMO0603\Projects\Alipay-demo-project\F2FPayApp\obj\Debug\F2FPayDll.pdb
+D:\work\2016\201602\net_demo\DEMO0603\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+D:\work\2016\201602\net_demo\DEMO0603\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.dll
+D:\work\2016\201602\net_demo\DEMO0603\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.pdb
+D:\work\2016\201602\net_demo\DEMO0603\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.dll
+D:\work\2016\201602\net_demo\DEMO0603\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+D:\work\2016\201602\net_demo\DEMO0603\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.pdb
+D:\work\2016\201602\net_demo\DEMO0603\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.dll
+D:\work\2016\201602\net_demo\DEMO0603\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.pdb
+D:\work\2016\demo_all\DEMO_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.dll
+D:\work\2016\demo_all\DEMO_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.pdb
+D:\work\2016\demo_all\DEMO_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.dll
+D:\work\2016\demo_all\DEMO_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+D:\work\2016\demo_all\DEMO_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.pdb
+D:\work\2016\demo_all\DEMO_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+D:\work\2016\demo_all\DEMO_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.dll
+D:\work\2016\demo_all\DEMO_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.pdb
+C:\Users\wb-huaernan\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.dll
+C:\Users\wb-huaernan\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.pdb
+C:\Users\wb-huaernan\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.dll
+C:\Users\wb-huaernan\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+C:\Users\wb-huaernan\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.pdb
+C:\Users\wb-huaernan\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+C:\Users\wb-huaernan\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.dll
+C:\Users\wb-huaernan\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (1)\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (1)\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (1)\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (1)\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (1)\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (1)\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (1)\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (1)\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet_RSA1\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet_RSA1\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet_RSA1\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet_RSA1\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet_RSA1\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet_RSA1\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet_RSA1\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet_RSA1\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (4)\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (4)\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (4)\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (4)\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (4)\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.pdb
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (4)\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (4)\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.dll
+C:\Users\jinjie.zhang\Desktop\F2FPay_Demo_DotNet (4)\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.pdb
+D:\安装包\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.dll
+D:\安装包\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.pdb
+D:\安装包\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.dll
+D:\安装包\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+D:\安装包\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.pdb
+D:\安装包\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+D:\安装包\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.dll
+D:\安装包\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\obj\Debug\F2FPayDll.pdb
+F:\Projects\WebService1\F2FPayDll\bin\Debug\F2FPayDll.dll
+F:\Projects\WebService1\F2FPayDll\bin\Debug\F2FPayDll.pdb
+F:\Projects\WebService1\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+F:\Projects\WebService1\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+F:\Projects\WebService1\F2FPayDll\obj\Debug\F2FPayDll.dll
+F:\Projects\WebService1\F2FPayDll\obj\Debug\F2FPayDll.pdb
+F:\Projects\WebService1\F2FPayDll\bin\Debug\AopSdk.dll
+F:\Projects\WebService1\F2FPayDll\bin\Debug\AopSdk.pdb
+F:\Projects\WebService1\F2FPayDll\obj\Debug\F2FPayDll.csproj.CoreCompileInputs.cache
+E:\Product\BoardSystem\Webservice\F2FPayDll\bin\Debug\F2FPayDll.dll
+E:\Product\BoardSystem\Webservice\F2FPayDll\bin\Debug\F2FPayDll.pdb
+E:\Product\BoardSystem\Webservice\F2FPayDll\bin\Debug\AopSdk.dll
+E:\Product\BoardSystem\Webservice\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+E:\Product\BoardSystem\Webservice\F2FPayDll\bin\Debug\AopSdk.pdb
+E:\Product\BoardSystem\Webservice\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+E:\Product\BoardSystem\Webservice\F2FPayDll\obj\Debug\F2FPayDll.csproj.CoreCompileInputs.cache
+E:\Product\BoardSystem\Webservice\F2FPayDll\obj\Debug\F2FPayDll.dll
+E:\Product\BoardSystem\Webservice\F2FPayDll\obj\Debug\F2FPayDll.pdb
+D:\lijint\myProject\CCproject\Webservice\F2FPayDll\bin\Debug\F2FPayDll.dll
+D:\lijint\myProject\CCproject\Webservice\F2FPayDll\bin\Debug\F2FPayDll.pdb
+D:\lijint\myProject\CCproject\Webservice\F2FPayDll\bin\Debug\AopSdk.dll
+D:\lijint\myProject\CCproject\Webservice\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+D:\lijint\myProject\CCproject\Webservice\F2FPayDll\bin\Debug\AopSdk.pdb
+D:\lijint\myProject\CCproject\Webservice\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+D:\lijint\myProject\CCproject\Webservice\F2FPayDll\obj\Debug\F2FPayDll.dll
+D:\lijint\myProject\CCproject\Webservice\F2FPayDll\obj\Debug\F2FPayDll.pdb
+D:\lijint\Project\CCproject\Webservice\F2FPayDll\bin\Debug\F2FPayDll.dll
+D:\lijint\Project\CCproject\Webservice\F2FPayDll\bin\Debug\F2FPayDll.pdb
+D:\lijint\Project\CCproject\Webservice\F2FPayDll\bin\Debug\AopSdk.dll
+D:\lijint\Project\CCproject\Webservice\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+D:\lijint\Project\CCproject\Webservice\F2FPayDll\bin\Debug\AopSdk.pdb
+D:\lijint\Project\CCproject\Webservice\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+D:\lijint\Project\CCproject\Webservice\F2FPayDll\obj\Debug\F2FPayDll.dll
+D:\lijint\Project\CCproject\Webservice\F2FPayDll\obj\Debug\F2FPayDll.pdb

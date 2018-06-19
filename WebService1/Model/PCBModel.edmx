@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PCBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityType Name="PCB_AccessFileTB">
+          <Key>
+            <PropertyRef Name="AccessFileID" />
+          </Key>
+          <Property Name="AccessFileID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FileCoverID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AccessFileName" Type="varchar(max)" Nullable="false" />
+          <Property Name="AccessFileURL" Type="varchar(max)" Nullable="false" />
+          <Property Name="FileExtension" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FileSize" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FileMD5" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateAccount" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CreateDateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PCB_ConfigTB">
+          <Key>
+            <PropertyRef Name="ConfigID" />
+          </Key>
+          <Property Name="ConfigID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ConfigCode" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ConfigValue" Type="varchar(max)" />
+          <Property Name="Remark" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="PCB_EngineerInfo">
+          <Key>
+            <PropertyRef Name="EngineerID" />
+          </Key>
+          <Property Name="EngineerID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Account" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="AccountName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PhoneNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="MailAddress" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="WeChatAccount" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDateTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdateDateTime" Type="datetime" />
+          <Property Name="StateCode" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PCB_FileCoverTB">
+          <Key>
+            <PropertyRef Name="FileCoverID" />
+          </Key>
+          <Property Name="FileCoverID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FileCoverName" Type="varchar(max)" Nullable="false" />
+          <Property Name="FileSize" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FileExtension" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FileCoverURL" Type="varchar(max)" Nullable="false" />
+          <Property Name="FileMD5" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateAccount" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CreateDateTime" Type="datetime" Nullable="false" />
+          <Property Name="IsPublish" Type="bit" Nullable="false" />
+          <Property Name="Price" Type="varchar(max)" />
+          <Property Name="UpdateDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="PCB_OrderTB">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FileCoverID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="OrderNumber" Type="varchar(max)" Nullable="false" />
+          <Property Name="OrderPrice" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateAccount" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDateTime" Type="datetime" Nullable="false" />
+          <Property Name="IsPay" Type="bit" Nullable="false" />
+          <Property Name="UpdateDateTime" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="PCBModelStoreContainer">
+          <EntitySet Name="PCB_AccessFileTB" EntityType="Self.PCB_AccessFileTB" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PCB_ConfigTB" EntityType="Self.PCB_ConfigTB" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PCB_EngineerInfo" EntityType="Self.PCB_EngineerInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PCB_FileCoverTB" EntityType="Self.PCB_FileCoverTB" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PCB_OrderTB" EntityType="Self.PCB_OrderTB" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PCBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityType Name="PCB_AccessFileTB">
+          <Key>
+            <PropertyRef Name="AccessFileID" />
+          </Key>
+          <Property Name="AccessFileID" Type="Guid" Nullable="false" />
+          <Property Name="FileCoverID" Type="Guid" Nullable="false" />
+          <Property Name="AccessFileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AccessFileURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FileExtension" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FileSize" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FileMD5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CreateAccount" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CreateDateTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="PCB_ConfigTB">
+          <Key>
+            <PropertyRef Name="ConfigID" />
+          </Key>
+          <Property Name="ConfigID" Type="Guid" Nullable="false" />
+          <Property Name="ConfigCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ConfigValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="PCB_EngineerInfo">
+          <Key>
+            <PropertyRef Name="EngineerID" />
+          </Key>
+          <Property Name="EngineerID" Type="Guid" Nullable="false" />
+          <Property Name="Account" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AccountName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="WeChatAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CreateDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateDateTime" Type="DateTime" Precision="3" />
+          <Property Name="StateCode" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PCB_FileCoverTB">
+          <Key>
+            <PropertyRef Name="FileCoverID" />
+          </Key>
+          <Property Name="FileCoverID" Type="Guid" Nullable="false" />
+          <Property Name="FileCoverName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FileSize" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FileExtension" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FileCoverURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FileMD5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CreateAccount" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CreateDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsPublish" Type="Boolean" Nullable="false" />
+          <Property Name="Price" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UpdateDateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="PCB_OrderTB">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="Guid" Nullable="false" />
+          <Property Name="FileCoverID" Type="Guid" Nullable="false" />
+          <Property Name="OrderNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OrderPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CreateAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CreateDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsPay" Type="Boolean" Nullable="false" />
+          <Property Name="UpdateDateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="PCBEntities">
+          <EntitySet Name="PCB_AccessFileTB" EntityType="Self.PCB_AccessFileTB" />
+          <EntitySet Name="PCB_ConfigTB" EntityType="Self.PCB_ConfigTB" />
+          <EntitySet Name="PCB_EngineerInfo" EntityType="Self.PCB_EngineerInfo" />
+          <EntitySet Name="PCB_FileCoverTB" EntityType="Self.PCB_FileCoverTB" />
+          <EntitySet Name="PCB_OrderTB" EntityType="Self.PCB_OrderTB" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="PCBModelStoreContainer" CdmEntityContainer="PCBEntities">
+          <EntitySetMapping Name="PCB_AccessFileTB">
+            <EntityTypeMapping TypeName="PCBModel.PCB_AccessFileTB">
+              <MappingFragment StoreEntitySet="PCB_AccessFileTB">
+                <ScalarProperty Name="AccessFileID" ColumnName="AccessFileID" />
+                <ScalarProperty Name="FileCoverID" ColumnName="FileCoverID" />
+                <ScalarProperty Name="AccessFileName" ColumnName="AccessFileName" />
+                <ScalarProperty Name="AccessFileURL" ColumnName="AccessFileURL" />
+                <ScalarProperty Name="FileExtension" ColumnName="FileExtension" />
+                <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+                <ScalarProperty Name="FileMD5" ColumnName="FileMD5" />
+                <ScalarProperty Name="CreateAccount" ColumnName="CreateAccount" />
+                <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PCB_ConfigTB">
+            <EntityTypeMapping TypeName="PCBModel.PCB_ConfigTB">
+              <MappingFragment StoreEntitySet="PCB_ConfigTB">
+                <ScalarProperty Name="ConfigID" ColumnName="ConfigID" />
+                <ScalarProperty Name="ConfigCode" ColumnName="ConfigCode" />
+                <ScalarProperty Name="ConfigValue" ColumnName="ConfigValue" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PCB_EngineerInfo">
+            <EntityTypeMapping TypeName="PCBModel.PCB_EngineerInfo">
+              <MappingFragment StoreEntitySet="PCB_EngineerInfo">
+                <ScalarProperty Name="EngineerID" ColumnName="EngineerID" />
+                <ScalarProperty Name="Account" ColumnName="Account" />
+                <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="MailAddress" ColumnName="MailAddress" />
+                <ScalarProperty Name="WeChatAccount" ColumnName="WeChatAccount" />
+                <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+                <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+                <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PCB_FileCoverTB">
+            <EntityTypeMapping TypeName="PCBModel.PCB_FileCoverTB">
+              <MappingFragment StoreEntitySet="PCB_FileCoverTB">
+                <ScalarProperty Name="FileCoverID" ColumnName="FileCoverID" />
+                <ScalarProperty Name="FileCoverName" ColumnName="FileCoverName" />
+                <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+                <ScalarProperty Name="FileExtension" ColumnName="FileExtension" />
+                <ScalarProperty Name="FileCoverURL" ColumnName="FileCoverURL" />
+                <ScalarProperty Name="FileMD5" ColumnName="FileMD5" />
+                <ScalarProperty Name="CreateAccount" ColumnName="CreateAccount" />
+                <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+                <ScalarProperty Name="IsPublish" ColumnName="IsPublish" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PCB_OrderTB">
+            <EntityTypeMapping TypeName="PCBModel.PCB_OrderTB">
+              <MappingFragment StoreEntitySet="PCB_OrderTB">
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="FileCoverID" ColumnName="FileCoverID" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="OrderPrice" ColumnName="OrderPrice" />
+                <ScalarProperty Name="CreateAccount" ColumnName="CreateAccount" />
+                <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+                <ScalarProperty Name="IsPay" ColumnName="IsPay" />
+                <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

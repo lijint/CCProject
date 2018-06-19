@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="XNetModelStoreContainer" CdmEntityContainer="XNetEntities">
+    <EntitySetMapping Name="MTMS_BarCodeSNTB">
+      <EntityTypeMapping TypeName="XNetModel.MTMS_BarCodeSNTB">
+        <MappingFragment StoreEntitySet="MTMS_BarCodeSNTB">
+          <ScalarProperty Name="BarCodeSN" ColumnName="BarCodeSN" />
+          <ScalarProperty Name="SummonsNumber" ColumnName="SummonsNumber" />
+          <ScalarProperty Name="MaterialCode" ColumnName="MaterialCode" />
+          <ScalarProperty Name="HashKey" ColumnName="HashKey" />
+          <ScalarProperty Name="FactoryCode" ColumnName="FactoryCode" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MTMS_BoardBarCodeSNTB">
+      <EntityTypeMapping TypeName="XNetModel.MTMS_BoardBarCodeSNTB">
+        <MappingFragment StoreEntitySet="MTMS_BoardBarCodeSNTB">
+          <ScalarProperty Name="BarCodeSN" ColumnName="BarCodeSN" />
+          <ScalarProperty Name="SummonsNumber" ColumnName="SummonsNumber" />
+          <ScalarProperty Name="MaterialCode" ColumnName="MaterialCode" />
+          <ScalarProperty Name="HashKey" ColumnName="HashKey" />
+          <ScalarProperty Name="FactoryCode" ColumnName="FactoryCode" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MTMS_BoardPropertyTB">
+      <EntityTypeMapping TypeName="XNetModel.MTMS_BoardPropertyTB">
+        <MappingFragment StoreEntitySet="MTMS_BoardPropertyTB">
+          <ScalarProperty Name="BoardMaterialCode" ColumnName="BoardMaterialCode" />
+          <ScalarProperty Name="IsBurning" ColumnName="IsBurning" />
+          <ScalarProperty Name="BurningFileName" ColumnName="BurningFileName" />
+          <ScalarProperty Name="BoardLabelConfig" ColumnName="BoardLabelConfig" />
+          <ScalarProperty Name="CreatorAccount" ColumnName="CreatorAccount" />
+          <ScalarProperty Name="UpdateAccount" ColumnName="UpdateAccount" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MTMS_MaterialTB">
+      <EntityTypeMapping TypeName="XNetModel.MTMS_MaterialTB">
+        <MappingFragment StoreEntitySet="MTMS_MaterialTB">
+          <ScalarProperty Name="MaterialCode" ColumnName="MaterialCode" />
+          <ScalarProperty Name="ProductTypeCode" ColumnName="ProductTypeCode" />
+          <ScalarProperty Name="MaterialName" ColumnName="MaterialName" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StockUnit" ColumnName="StockUnit" />
+          <ScalarProperty Name="PackageCount" ColumnName="PackageCount" />
+          <ScalarProperty Name="SourceCode" ColumnName="SourceCode" />
+          <ScalarProperty Name="CreatorAccount" ColumnName="CreatorAccount" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="MaxIndex" ColumnName="MaxIndex" />
+          <ScalarProperty Name="ManufacturerTypeID" ColumnName="ManufacturerTypeID" />
+          <ScalarProperty Name="MPOSProperty" ColumnName="MPOSProperty" />
+          <ScalarProperty Name="HardwareConfig" ColumnName="HardwareConfig" />
+          <ScalarProperty Name="MaterialClassID" ColumnName="MaterialClassID" />
+          <ScalarProperty Name="MaterialClassName" ColumnName="MaterialClassName" />
+          <ScalarProperty Name="MaterialSubClassID" ColumnName="MaterialSubClassID" />
+          <ScalarProperty Name="MaterialSubClassName" ColumnName="MaterialSubClassName" />
+          <ScalarProperty Name="HashKey" ColumnName="HashKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MTMS_MaterialTypeTB">
+      <EntityTypeMapping TypeName="XNetModel.MTMS_MaterialTypeTB">
+        <MappingFragment StoreEntitySet="MTMS_MaterialTypeTB">
+          <ScalarProperty Name="MaterialTypeCode" ColumnName="MaterialTypeCode" />
+          <ScalarProperty Name="MaterialTypeName" ColumnName="MaterialTypeName" />
+          <ScalarProperty Name="CreatorAccount" ColumnName="CreatorAccount" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="SNTypeCode" ColumnName="SNTypeCode" />
+          <ScalarProperty Name="HashKey" ColumnName="HashKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MTMS_ProductPartConfigTB">
+      <EntityTypeMapping TypeName="XNetModel.MTMS_ProductPartConfigTB">
+        <MappingFragment StoreEntitySet="MTMS_ProductPartConfigTB">
+          <ScalarProperty Name="ProductPartConfigID" ColumnName="ProductPartConfigID" />
+          <ScalarProperty Name="TempSequenceNumber" ColumnName="TempSequenceNumber" />
+          <ScalarProperty Name="ProductSequenceNO" ColumnName="ProductSequenceNO" />
+          <ScalarProperty Name="MaterialBarCode" ColumnName="MaterialBarCode" />
+          <ScalarProperty Name="CreatorAccount" ColumnName="CreatorAccount" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="MaterialCode" ColumnName="MaterialCode" />
+          <ScalarProperty Name="WorkProcessID" ColumnName="WorkProcessID" />
+          <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+          <ScalarProperty Name="UpdateAccount" ColumnName="UpdateAccount" />
+          <ScalarProperty Name="FactoryCode" ColumnName="FactoryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_MTMS_MAT_FK_MATERI_MTMS_MAT" TypeName="XNetModel.FK_MTMS_MAT_FK_MATERI_MTMS_MAT" StoreEntitySet="MTMS_MaterialTB">
+      <EndProperty Name="MTMS_MaterialTypeTB">
+        <ScalarProperty Name="MaterialTypeCode" ColumnName="MaterialTypeCode" />
+      </EndProperty>
+      <EndProperty Name="MTMS_MaterialTB">
+        <ScalarProperty Name="MaterialCode" ColumnName="MaterialCode" />
+      </EndProperty>
+      <Condition ColumnName="MaterialTypeCode" IsNull="false" />
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

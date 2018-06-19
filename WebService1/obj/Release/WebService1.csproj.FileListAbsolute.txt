@@ -1,0 +1,5 @@
+f:\Projects\WebService1\WebService1\bin\WebService1.dll
+f:\Projects\WebService1\WebService1\bin\WebService1.pdb
+f:\Projects\WebService1\WebService1\obj\Release\WebService1.dll
+f:\Projects\WebService1\WebService1\obj\Release\WebService1.pdb
+f:\Projects\WebService1\WebService1\obj\Release\WebService1.csprojResolveAssemblyReference.cache

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="PCBModelStoreContainer" CdmEntityContainer="PCBEntities">
+    <EntitySetMapping Name="PCB_EngineerInfo">
+      <EntityTypeMapping TypeName="PCBModel.PCB_EngineerInfo">
+        <MappingFragment StoreEntitySet="PCB_EngineerInfo">
+          <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="WeChatAccount" ColumnName="WeChatAccount" />
+          <ScalarProperty Name="MailAddress" ColumnName="MailAddress" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="EngineerID" ColumnName="EngineerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PCB_ConfigTB">
+      <EntityTypeMapping TypeName="PCBModel.PCB_ConfigTB">
+        <MappingFragment StoreEntitySet="PCB_ConfigTB">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ConfigValue" ColumnName="ConfigValue" />
+          <ScalarProperty Name="ConfigCode" ColumnName="ConfigCode" />
+          <ScalarProperty Name="ConfigID" ColumnName="ConfigID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PCB_AccessFileTB">
+      <EntityTypeMapping TypeName="PCBModel.PCB_AccessFileTB">
+        <MappingFragment StoreEntitySet="PCB_AccessFileTB">
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreateAccount" ColumnName="CreateAccount" />
+          <ScalarProperty Name="FileMD5" ColumnName="FileMD5" />
+          <ScalarProperty Name="FileExtension" ColumnName="FileExtension" />
+          <ScalarProperty Name="AccessFileURL" ColumnName="AccessFileURL" />
+          <ScalarProperty Name="AccessFileName" ColumnName="AccessFileName" />
+          <ScalarProperty Name="FileCoverID" ColumnName="FileCoverID" />
+          <ScalarProperty Name="AccessFileID" ColumnName="AccessFileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PCB_FileCoverTB">
+      <EntityTypeMapping TypeName="PCBModel.PCB_FileCoverTB">
+        <MappingFragment StoreEntitySet="PCB_FileCoverTB">
+          <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="IsPublish" ColumnName="IsPublish" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreateAccount" ColumnName="CreateAccount" />
+          <ScalarProperty Name="FileMD5" ColumnName="FileMD5" />
+          <ScalarProperty Name="FileCoverURL" ColumnName="FileCoverURL" />
+          <ScalarProperty Name="FileExtension" ColumnName="FileExtension" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="FileCoverName" ColumnName="FileCoverName" />
+          <ScalarProperty Name="FileCoverID" ColumnName="FileCoverID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PCB_OrderTB">
+      <EntityTypeMapping TypeName="PCBModel.PCB_OrderTB">
+        <MappingFragment StoreEntitySet="PCB_OrderTB">
+          <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+          <ScalarProperty Name="IsPay" ColumnName="IsPay" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreateAccount" ColumnName="CreateAccount" />
+          <ScalarProperty Name="OrderPrice" ColumnName="OrderPrice" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="FileCoverID" ColumnName="FileCoverID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

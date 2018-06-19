@@ -1,0 +1,53 @@
+ 
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ DeleteAccessFile ]
+ 异常行号：[ 321行 ]
+ 记录时间：[ 2018-06-06 13:35:00,983 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String path)
+   在 DownLoad.BLL.FileManagement.FileManagementService.DeleteAccessFile(String fileCoverID, String accessFileName, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 316 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ DeleteFileCover ]
+ 异常行号：[ 364行 ]
+ 记录时间：[ 2018-06-06 13:38:13,857 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String path)
+   在 DownLoad.BLL.FileManagement.FileManagementService.DeleteFileCover(String fileCoverID, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 359 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ DeleteAccessFile ]
+ 异常行号：[ 321行 ]
+ 记录时间：[ 2018-06-06 13:51:52,701 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String path)
+   在 DownLoad.BLL.FileManagement.FileManagementService.DeleteAccessFile(String fileCoverID, String accessFileName, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 316 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ DeleteFileCover ]
+ 异常行号：[ 364行 ]
+ 记录时间：[ 2018-06-06 14:01:30,646 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String path)
+   在 DownLoad.BLL.FileManagement.FileManagementService.DeleteFileCover(String fileCoverID, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 359 ]
+ 

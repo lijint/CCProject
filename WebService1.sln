@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownLoad", "WebService1\DownLoad.csproj", "{3FB2A64B-2885-4679-9BBC-627834F46F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "F2FPayDll", "F2FPayDll\F2FPayDll.csproj", "{EC6DA18D-0532-4E73-BA69-A575A724C8BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AopSdk", "alipay-sdk-NET20161213174056\AopSdk.csproj", "{9C11CAE5-5188-4E71-825B-68FC3135728A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FB2A64B-2885-4679-9BBC-627834F46F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB2A64B-2885-4679-9BBC-627834F46F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB2A64B-2885-4679-9BBC-627834F46F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB2A64B-2885-4679-9BBC-627834F46F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6DA18D-0532-4E73-BA69-A575A724C8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6DA18D-0532-4E73-BA69-A575A724C8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6DA18D-0532-4E73-BA69-A575A724C8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6DA18D-0532-4E73-BA69-A575A724C8BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C11CAE5-5188-4E71-825B-68FC3135728A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C11CAE5-5188-4E71-825B-68FC3135728A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C11CAE5-5188-4E71-825B-68FC3135728A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C11CAE5-5188-4E71-825B-68FC3135728A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

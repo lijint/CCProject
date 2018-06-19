@@ -1,0 +1,9 @@
+F:\Projects\WebService1\alipay-sdk-NET20161213174056\bin\Release\AopSdk.dll
+F:\Projects\WebService1\alipay-sdk-NET20161213174056\bin\Release\AopSdk.pdb
+F:\Projects\WebService1\alipay-sdk-NET20161213174056\obj\Release\AopSdk.dll
+F:\Projects\WebService1\alipay-sdk-NET20161213174056\obj\Release\AopSdk.pdb
+E:\Product\BoardSystem\Webservice\alipay-sdk-NET20161213174056\bin\Release\AopSdk.dll
+E:\Product\BoardSystem\Webservice\alipay-sdk-NET20161213174056\bin\Release\AopSdk.pdb
+E:\Product\BoardSystem\Webservice\alipay-sdk-NET20161213174056\obj\Release\AopSdk.csproj.CoreCompileInputs.cache
+E:\Product\BoardSystem\Webservice\alipay-sdk-NET20161213174056\obj\Release\AopSdk.dll
+E:\Product\BoardSystem\Webservice\alipay-sdk-NET20161213174056\obj\Release\AopSdk.pdb

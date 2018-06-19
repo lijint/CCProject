@@ -1,0 +1,406 @@
+ 
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 13:44:41,378 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.ParameterAPI.GetConfig(String configCoede) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\ParameterAPI.cs:行号 27
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 41 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 13:46:57,542 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 System.Drawing.Image.Save(String filename)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 13:49:08,811 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 System.Drawing.Image.Save(String filename)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 13:53:31,405 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 System.Drawing.Image.Save(String filename)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 13:55:45,070 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 13:56:49,379 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 13:57:54,964 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 14:03:28,266 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 14:06:50,348 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 14:09:00,145 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 14:09:06,465 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 62行 ]
+ 记录时间：[ 2018-06-04 14:10:25,524 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 48 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 63行 ]
+ 记录时间：[ 2018-06-04 14:18:11,254 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String path, Boolean recursive)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 55 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 64行 ]
+ 记录时间：[ 2018-06-04 14:26:47,751 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 50 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 64行 ]
+ 记录时间：[ 2018-06-04 14:27:38,050 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 50 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 64行 ]
+ 记录时间：[ 2018-06-04 14:31:15,842 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 50 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 70行 ]
+ 记录时间：[ 2018-06-04 14:56:34,522 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.GetMD5Hash(String fileName) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 290
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 58 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 70行 ]
+ 记录时间：[ 2018-06-04 15:04:09,072 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 DownLoad.BLL.Common.Common.GetMD5Hash(String fileName) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\Common\Common.cs:行号 290
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 58 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 69行 ]
+ 记录时间：[ 2018-06-04 15:07:57,666 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 System.Drawing.Image.Save(String filename)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 54 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateFileCover ]
+ 异常行号：[ 69行 ]
+ 记录时间：[ 2018-06-04 15:13:10,530 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   在 System.Drawing.Image.Save(String filename, ImageFormat format)
+   在 System.Drawing.Image.Save(String filename)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateFileCover(String fileData, String md5, String account) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 54 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateAccessFile ]
+ 异常行号：[ 152行 ]
+ 记录时间：[ 2018-06-04 18:00:14,141 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ELinq.ExpressionConverter.NewTranslator.TypedTranslate(ExpressionConverter parent, NewExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.EqualsTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.BinaryTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.BinaryTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.FirstPredicateTranslatorBase.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateAccessFile(Byte[] accessFile, String fileCoverID, String account, String fileExtension, String accessFileName) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 107 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateAccessFile ]
+ 异常行号：[ 152行 ]
+ 记录时间：[ 2018-06-04 18:15:20,191 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ELinq.ExpressionConverter.NewTranslator.TypedTranslate(ExpressionConverter parent, NewExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.EqualsTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.BinaryTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.BinaryTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.FirstPredicateTranslatorBase.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateAccessFile(Byte[] accessFile, String fileCoverID, String account, String fileExtension, String accessFileName) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 107 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateAccessFile ]
+ 异常行号：[ 152行 ]
+ 记录时间：[ 2018-06-04 18:18:14,757 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ELinq.ExpressionConverter.NewTranslator.TypedTranslate(ExpressionConverter parent, NewExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.EqualsTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.BinaryTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.BinaryTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.FirstPredicateTranslatorBase.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateAccessFile(Byte[] accessFile, String fileCoverID, String account, String fileExtension, String accessFileName) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 107 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateAccessFile ]
+ 异常行号：[ 152行 ]
+ 记录时间：[ 2018-06-04 18:20:37,419 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ELinq.ExpressionConverter.NewTranslator.TypedTranslate(ExpressionConverter parent, NewExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.EqualsTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.BinaryTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.BinaryTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.FirstPredicateTranslatorBase.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateAccessFile(Byte[] accessFile, String fileCoverID, String account, String fileExtension, String accessFileName) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 107 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateAccessFile ]
+ 异常行号：[ 152行 ]
+ 记录时间：[ 2018-06-04 18:22:07,740 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String path)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateAccessFile(Byte[] accessFile, String fileCoverID, String account, String fileExtension, String accessFileName) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 134 ]
+  
+ 文件名称：[ E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs ]
+异常方法：[ UpdateAccessFile ]
+ 异常行号：[ 152行 ]
+ 记录时间：[ 2018-06-04 18:23:47,051 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.FileManagement.FileManagementService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive)
+   在 System.IO.Directory.Delete(String path)
+   在 DownLoad.BLL.FileManagement.FileManagementService.UpdateAccessFile(Byte[] accessFile, String fileCoverID, String account, String fileExtension, String accessFileName) 位置 E:\Product\BoardSystem\Webservice\WebService1\BLL\FileManagement\FileManagementService.asmx.cs:行号 134 ]
+ 

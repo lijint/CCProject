@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PMSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="PMSModelStoreContainer">
+    <EntitySet Name="Sys_UserTB" EntityType="PMSModel.Store.Sys_UserTB" store:Type="Tables" store:Schema="dbo" store:Name="Sys_UserTB">
+      <DefiningQuery>SELECT 
+      [Sys_UserTB].[UserID] AS [UserID], 
+      [Sys_UserTB].[Account] AS [Account], 
+      [Sys_UserTB].[UserName] AS [UserName], 
+      [Sys_UserTB].[PassWord] AS [PassWord], 
+      [Sys_UserTB].[CreateDateTime] AS [CreateDateTime], 
+      [Sys_UserTB].[FailureDateTime] AS [FailureDateTime], 
+      [Sys_UserTB].[IsOnline] AS [IsOnline], 
+      [Sys_UserTB].[UserTel] AS [UserTel], 
+      [Sys_UserTB].[UserPermission] AS [UserPermission], 
+      [Sys_UserTB].[StateCode] AS [StateCode], 
+      [Sys_UserTB].[LastedIP] AS [LastedIP]
+      FROM [dbo].[Sys_UserTB] AS [Sys_UserTB]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“PMS.dbo.Sys_UserTB”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Sys_UserTB">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Account" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="PassWord" />
+      <PropertyRef Name="CreateDateTime" />
+      <PropertyRef Name="FailureDateTime" />
+      <PropertyRef Name="IsOnline" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Account" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PassWord" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreateDateTime" Type="datetime" Nullable="false" />
+    <Property Name="FailureDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsOnline" Type="bit" Nullable="false" />
+    <Property Name="UserTel" Type="varchar" MaxLength="50" />
+    <Property Name="UserPermission" Type="int" />
+    <Property Name="StateCode" Type="bit" />
+    <Property Name="LastedIP" Type="nchar" MaxLength="10" />
+  </EntityType>
+</Schema>
