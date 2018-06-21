@@ -21,6 +21,7 @@ namespace DownLoad.BLL.Login
     [System.ComponentModel.ToolboxItem(false)]
     // 若要允许使用 ASP.NET AJAX 从脚本中调用此 Web 服务，请取消注释以下行。 
      [System.Web.Script.Services.ScriptService]
+
     public class LoginWebService : System.Web.Services.WebService
     {
 
@@ -349,74 +350,177 @@ namespace DownLoad.BLL.Login
         #region 系统参数
 
         #region 设置系统参数
+        /// <summary>
+        /// 设置系统参数
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        /// <param name="remark"></param>
+        /// <returns></returns>
         [WebMethod]
-        public Result SetSysParams(string key, string value,string remark)
+        public Result SetSysParams(string key, string value, string remark)
         {
             Result result = new Result();
-
-            PCBEntities pCBEntities = new PCBEntities();
-            PCB_ConfigTB configSys = ParameterAPI.GetConfig("SysConfigParams");
-            configSys.ConfigValue = value;
-            pCBEntities.Refresh(System.Data.Objects.RefreshMode.ClientWins, configSys);
-            result.IsOK = Convert.ToBoolean(pCBEntities.SaveChanges());
-            //JsonConvert.SerializeObject(filedata);
+            result.StateCodeID = 0;
+            result.IsOK = false;
+            try
+            {
+                PCBEntities pCBEntities = new PCBEntities();
+                //PCB_ConfigTB configSys = ParameterAPI.GetConfig(key);
+                PCB_ConfigTB configSys = pCBEntities.PCB_ConfigTB.FirstOrDefault(p => p.ConfigCode == key);
+                if (configSys == null)
+                {
+                    result.IsOK = false;
+                    result.Description = "无对应项";
+                    return result;
+                }
+                configSys.ConfigValue = value;
+                configSys.Remark = remark;
+                pCBEntities.Refresh(System.Data.Objects.RefreshMode.ClientWins, configSys);
+                result.IsOK = Convert.ToBoolean(pCBEntities.SaveChanges());
+                //result = Common.Common.UpdateConfigTB(key, value, remark);
+                if (result.IsOK)
+                    result.Description = "设置成功";
+            }
+            catch (Exception ex)
+            {
+                LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+                result.IsOK = false;
+                result.Description = ex.Message;
+            }
             return result;
 
         }
         #endregion
 
-
         #region 获取系统参数
+        /// <summary>
+        /// 获取系统参数
+        /// </summary>
+        /// <param name="strSysParamsKey">系统参数key值</param>
+        /// <returns></returns>
         [WebMethod]
         public Result GetSysParams(string strSysParamsKey)
         {
             Result result = new Result();
-            PCBEntities pcbEntities = new PCBEntities();
-
-            
-            Dictionary<string, string> configTB = new Dictionary<string, string>();
-            if (strSysParamsKey == "")
+            result.StateCodeID = 0;
+            result.IsOK = false;
+            try
             {
-                configTB.Clear();
-                foreach(PCB_ConfigTB c in pcbEntities.PCB_ConfigTB)
+                PCBEntities pcbEntities = new PCBEntities();
+
+                collcetDictionary<string, string, string> configTB = new collcetDictionary<string, string, string>();
+                if (string.IsNullOrEmpty(strSysParamsKey))
                 {
-                    configTB.Add(c.ConfigCode, c.ConfigValue);
-                }
-                result.ExtData = JsonConvert.SerializeObject(configTB);
-                result.IsOK = true;
-                result.StateCodeID = 1;
+                    configTB.Clear();
+                    foreach (PCB_ConfigTB c in pcbEntities.PCB_ConfigTB)
+                    {
+                        configTB.Add(c.ConfigCode, c.ConfigValue, c.Remark);
+                    }
+                    result.ExtData = JsonConvert.SerializeObject(configTB.collectList);
+                    result.IsOK = true;
+                    result.StateCodeID = 1;
+                    result.Description = "查询成功";
 
+                }
+                else
+                {
+                    PCB_ConfigTB configSysTB = pcbEntities.PCB_ConfigTB.FirstOrDefault(p => p.ConfigCode == strSysParamsKey);
+                    if (configSysTB == null)
+                    {
+                        result.IsOK = false;
+                        result.Description = "无对应项";
+                        return result;
+                    }
+                    configTB.Clear();
+                    configTB.Add(configSysTB.ConfigCode, configSysTB.ConfigValue, configSysTB.Remark);
+                    result.ExtData = JsonConvert.SerializeObject(configTB.collectList);
+                    result.IsOK = true;
+                    result.StateCodeID = 1;
+                    result.Description = "查询成功";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                PCB_ConfigTB configSysTB = pcbEntities.PCB_ConfigTB.FirstOrDefault(p => p.ConfigCode == strSysParamsKey);
-                configTB.Clear();
-                configTB.Add(configSysTB.ConfigCode, configSysTB.ConfigValue);
-                result.ExtData = JsonConvert.SerializeObject(configTB);
-                result.IsOK = true;
-                result.StateCodeID = 1;
+                LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+                result.IsOK = false;
+                result.Description = ex.Message;
             }
 
             return result;
         }
+
+        //public Result GetSysParams()
+        //{
+        //    Result result = new Result();
+        //    result.StateCodeID = 0;
+        //    result.IsOK = false;
+        //    try
+        //    {
+        //        PCBEntities pcbEntities = new PCBEntities();
+
+        //        collcetDictionary<string, string, string> configTB = new collcetDictionary<string, string, string>();
+        //        configTB.Clear();
+        //        foreach (PCB_ConfigTB c in pcbEntities.PCB_ConfigTB)
+        //        {
+        //            configTB.Add(c.ConfigCode, c.ConfigValue, c.Remark);
+        //        }
+        //        result.ExtData = JsonConvert.SerializeObject(configTB.collectList);
+        //        result.IsOK = true;
+        //        result.StateCodeID = 1;
+        //        result.Description = "查询成功";
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+        //        result.IsOK = false;
+        //        result.Description = ex.Message;
+        //    }
+
+        //    return result;
+        //}
         #endregion
-        #endregion
-        public string hello()
+
+        #region 配置参数接口相关类
+        private class collcetDictionary<T1, T2, T3>
         {
-            return "hello";
+            private List<collcetCell<T1, T2, T3>> cList;
+            public List<collcetCell<T1, T2, T3>> collectList
+            {
+                get { return cList; }
+            }
+            public collcetDictionary()
+            {
+                cList = new List<collcetCell<T1, T2, T3>>();
+            }
+            public void Add(T1 a1, T2 b1, T3 c1)
+            {
+                collcetCell<T1, T2, T3> c = new collcetCell<T1, T2, T3>(a1, b1, c1);
+                cList.Add(c);
+            }
+            public void Clear()
+            {
+                cList.Clear();
+            }
         }
 
-        private class collcetDictionary<T, T, T>
+        private class collcetCell<T1, T2, T3>
         {
-            
-        } 
+            public T1 key;
+            public T2 value;
+            public T3 remark;
+            public collcetCell(T1 k, T2 v, T3 r)
+            {
+                key = k;
+                value = v;
+                remark = r;
+            }
+        }
 
+        #endregion
 
-
-
-
-
-
+        #endregion
 
     }
 }

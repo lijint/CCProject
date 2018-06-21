@@ -10,6 +10,7 @@ using DownLoad.BLL.Common;
 using DownLoad.Entity;
 using DownLoad.Model;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace DownLoad.BLL.AliPay
 {
@@ -77,7 +78,7 @@ namespace DownLoad.BLL.AliPay
             {
                 LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
                 result.IsOK = false;
-                result.Description = ex.InnerException.Message;
+                result.Description = ex.Message;
             }
             return result;
         }
@@ -142,7 +143,7 @@ namespace DownLoad.BLL.AliPay
             {
                 LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
                 result.IsOK = false;
-                result.Description = ex.InnerException.Message;
+                result.Description = ex.Message;
             }
             return result;
         }
@@ -198,7 +199,7 @@ namespace DownLoad.BLL.AliPay
             {
                 LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
                 result.IsOK = false;
-                result.Description = ex.InnerException.Message;
+                result.Description = ex.Message;
             }
             return result;
         }
@@ -286,13 +287,13 @@ namespace DownLoad.BLL.AliPay
             {
                 LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
                 result.IsOK = false;
-                result.Description = ex.InnerException.Message;
+                result.Description = ex.Message;
             }
             return result;
         }
 
         #endregion
-       
+
 
     }
 }

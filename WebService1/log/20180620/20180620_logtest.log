@@ -1,0 +1,118 @@
+ 
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ SetSysParams ]
+ 异常行号：[ 377行 ]
+ 记录时间：[ 2018-06-20 10:46:19,442 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ObjectContext.RefreshCheck(Dictionary`2 entities, Object entity, EntityKey key)
+   在 System.Data.Objects.ObjectContext.AddRefreshKey(Object entityLike, Dictionary`2 entities, Dictionary`2 currentKeys)
+   在 System.Data.Objects.ObjectContext.RefreshEntities(RefreshMode refreshMode, IEnumerable collection)
+   在 System.Data.Objects.ObjectContext.Refresh(RefreshMode refreshMode, Object entity)
+   在 DownLoad.BLL.Login.LoginWebService.SetSysParams(String key, String value, String remark) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 370 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ SetSysParams ]
+ 异常行号：[ 377行 ]
+ 记录时间：[ 2018-06-20 11:13:40,055 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ObjectContext.RefreshCheck(Dictionary`2 entities, Object entity, EntityKey key)
+   在 System.Data.Objects.ObjectContext.AddRefreshKey(Object entityLike, Dictionary`2 entities, Dictionary`2 currentKeys)
+   在 System.Data.Objects.ObjectContext.RefreshEntities(RefreshMode refreshMode, IEnumerable collection)
+   在 System.Data.Objects.ObjectContext.Refresh(RefreshMode refreshMode, Object entity)
+   在 DownLoad.BLL.Login.LoginWebService.SetSysParams(String key, String value, String remark) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 370 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ SetSysParams ]
+ 异常行号：[ 377行 ]
+ 记录时间：[ 2018-06-20 11:15:12,206 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ObjectContext.RefreshCheck(Dictionary`2 entities, Object entity, EntityKey key)
+   在 System.Data.Objects.ObjectContext.AddRefreshKey(Object entityLike, Dictionary`2 entities, Dictionary`2 currentKeys)
+   在 System.Data.Objects.ObjectContext.RefreshEntities(RefreshMode refreshMode, IEnumerable collection)
+   在 System.Data.Objects.ObjectContext.Refresh(RefreshMode refreshMode, Object entity)
+   在 DownLoad.BLL.Login.LoginWebService.SetSysParams(String key, String value, String remark) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 370 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ SetSysParams ]
+ 异常行号：[ 377行 ]
+ 记录时间：[ 2018-06-20 11:16:01,186 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ObjectContext.RefreshCheck(Dictionary`2 entities, Object entity, EntityKey key)
+   在 System.Data.Objects.ObjectContext.AddRefreshKey(Object entityLike, Dictionary`2 entities, Dictionary`2 currentKeys)
+   在 System.Data.Objects.ObjectContext.RefreshEntities(RefreshMode refreshMode, IEnumerable collection)
+   在 System.Data.Objects.ObjectContext.Refresh(RefreshMode refreshMode, Object entity)
+   在 DownLoad.BLL.Login.LoginWebService.SetSysParams(String key, String value, String remark) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 370 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ SetSysParams ]
+ 异常行号：[ 384行 ]
+ 记录时间：[ 2018-06-20 11:24:50,766 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ObjectContext.RefreshCheck(Dictionary`2 entities, Object entity, EntityKey key)
+   在 System.Data.Objects.ObjectContext.AddRefreshKey(Object entityLike, Dictionary`2 entities, Dictionary`2 currentKeys)
+   在 System.Data.Objects.ObjectContext.RefreshEntities(RefreshMode refreshMode, IEnumerable collection)
+   在 System.Data.Objects.ObjectContext.Refresh(RefreshMode refreshMode, Object entity)
+   在 DownLoad.BLL.Login.LoginWebService.SetSysParams(String key, String value, String remark) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 377 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ SetSysParams ]
+ 异常行号：[ 384行 ]
+ 记录时间：[ 2018-06-20 11:28:04,458 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ObjectContext.RefreshCheck(Dictionary`2 entities, Object entity, EntityKey key)
+   在 System.Data.Objects.ObjectContext.AddRefreshKey(Object entityLike, Dictionary`2 entities, Dictionary`2 currentKeys)
+   在 System.Data.Objects.ObjectContext.RefreshEntities(RefreshMode refreshMode, IEnumerable collection)
+   在 System.Data.Objects.ObjectContext.Refresh(RefreshMode refreshMode, Object entity)
+   在 DownLoad.BLL.Login.LoginWebService.SetSysParams(String key, String value, String remark) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 377 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ SetSysParams ]
+ 异常行号：[ 384行 ]
+ 记录时间：[ 2018-06-20 13:38:40,177 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ObjectContext.RefreshCheck(Dictionary`2 entities, Object entity, EntityKey key)
+   在 System.Data.Objects.ObjectContext.AddRefreshKey(Object entityLike, Dictionary`2 entities, Dictionary`2 currentKeys)
+   在 System.Data.Objects.ObjectContext.RefreshEntities(RefreshMode refreshMode, IEnumerable collection)
+   在 System.Data.Objects.ObjectContext.Refresh(RefreshMode refreshMode, Object entity)
+   在 DownLoad.BLL.Login.LoginWebService.SetSysParams(String key, String value, String remark) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 377 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs ]
+异常方法：[ SetSysParams ]
+ 异常行号：[ 384行 ]
+ 记录时间：[ 2018-06-20 13:42:06,079 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.Login.LoginWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ObjectContext.RefreshCheck(Dictionary`2 entities, Object entity, EntityKey key)
+   在 System.Data.Objects.ObjectContext.AddRefreshKey(Object entityLike, Dictionary`2 entities, Dictionary`2 currentKeys)
+   在 System.Data.Objects.ObjectContext.RefreshEntities(RefreshMode refreshMode, IEnumerable collection)
+   在 System.Data.Objects.ObjectContext.Refresh(RefreshMode refreshMode, Object entity)
+   在 DownLoad.BLL.Login.LoginWebService.SetSysParams(String key, String value, String remark) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\Login\LoginWebService.asmx.cs:行号 377 ]
+  
+ 文件名称：[ d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs ]
+异常方法：[ SetSysParams ]
+ 异常行号：[ 332行 ]
+ 记录时间：[ 2018-06-20 13:44:07,600 ]
+ 日志级别：[ INFO  ]
+ 出错类[ DownLoad.BLL.AliPay.AliPayWebService ]
+ 属性:[ (null)]
+ 错误描述：[    在 System.Data.Objects.ObjectContext.RefreshCheck(Dictionary`2 entities, Object entity, EntityKey key)
+   在 System.Data.Objects.ObjectContext.AddRefreshKey(Object entityLike, Dictionary`2 entities, Dictionary`2 currentKeys)
+   在 System.Data.Objects.ObjectContext.RefreshEntities(RefreshMode refreshMode, IEnumerable collection)
+   在 System.Data.Objects.ObjectContext.Refresh(RefreshMode refreshMode, Object entity)
+   在 DownLoad.BLL.AliPay.AliPayWebService.SetSysParams(String key, String value, String remark) 位置 d:\lijint\Project\CCproject\Webservice\WebService1\BLL\AliPay\AliPayWebService.asmx.cs:行号 325 ]
+ 

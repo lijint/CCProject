@@ -8,7 +8,7 @@
     <LastUsedBuildConfiguration>Debug</LastUsedBuildConfiguration>
     <LastUsedPlatform>Any CPU</LastUsedPlatform>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>D:\lijint\Project\WebSite</_PublishTargetUrl>
+    <_PublishTargetUrl>\\CHENC\Pro</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Code/Config.cs">
@@ -33,7 +33,7 @@
       <publishTime>03/21/2018 07:15:16</publishTime>
     </File>
     <File Include="bin/WebService1.dll">
-      <publishTime>06/11/2018 15:24:31</publishTime>
+      <publishTime>06/20/2018 18:07:39</publishTime>
     </File>
     <File Include="bin/WebService1.pdb">
       <publishTime>06/07/2018 14:53:09</publishTime>
@@ -63,7 +63,7 @@
       <publishTime>11/28/2017 16:06:27</publishTime>
     </File>
     <File Include="Model/PCBModel.edmx.diagram">
-      <publishTime>06/11/2018 15:24:28</publishTime>
+      <publishTime>06/12/2018 16:21:26</publishTime>
     </File>
     <File Include="Model/PMSModel.edmx.diagram">
       <publishTime>03/26/2018 14:45:13</publishTime>
@@ -75,7 +75,7 @@
       <publishTime>11/23/2017 19:58:53</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/11/2018 15:16:14</publishTime>
+      <publishTime>06/20/2018 19:51:39</publishTime>
     </File>
   </ItemGroup>
 </Project>

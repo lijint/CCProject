@@ -337,7 +337,7 @@ namespace DownLoad.BLL.Common
         #endregion
 
 
-
+        #region AliPay
         /// <summary>
         /// 构造支付请求数据
         /// </summary>
@@ -405,6 +405,10 @@ namespace DownLoad.BLL.Common
 
         }
 
+        #endregion
+
+        #region AliPay订单
+
         /// <summary>
         /// 预下单记录
         /// </summary>
@@ -436,7 +440,7 @@ namespace DownLoad.BLL.Common
 
                 LogHelper.WriteLog(typeof(Common)).Info(ex.StackTrace);
                 result.IsOK = false;
-                result.Description = ex.InnerException.Message;
+                result.Description = ex.Message;
             }
             return result;
         }
@@ -472,7 +476,7 @@ namespace DownLoad.BLL.Common
 
                 LogHelper.WriteLog(typeof(Common)).Info(ex.StackTrace);
                 result.IsOK = false;
-                result.Description = ex.InnerException.Message;
+                result.Description = ex.Message;
             }
             return result;
         }
@@ -509,10 +513,11 @@ namespace DownLoad.BLL.Common
 
                 LogHelper.WriteLog(typeof(Common)).Info(ex.StackTrace);
                 result.IsOK = false;
-                result.Description = ex.InnerException.Message;
+                result.Description = ex.Message;
             }
             return result;
         }
+        #endregion
 
 
         ///// <summary>

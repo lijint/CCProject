@@ -29,3 +29,8 @@ D:\lijint\myProject\CCproject\Webservice\alipay-sdk-NET20161213174056\bin\Debug\
 D:\lijint\myProject\CCproject\Webservice\alipay-sdk-NET20161213174056\obj\Debug\AopSdk.csprojResolveAssemblyReference.cache
 D:\lijint\myProject\CCproject\Webservice\alipay-sdk-NET20161213174056\obj\Debug\AopSdk.dll
 D:\lijint\myProject\CCproject\Webservice\alipay-sdk-NET20161213174056\obj\Debug\AopSdk.pdb
+D:\lijint\Project\CCproject\Webservice\alipay-sdk-NET20161213174056\bin\Debug\AopSdk.dll
+D:\lijint\Project\CCproject\Webservice\alipay-sdk-NET20161213174056\bin\Debug\AopSdk.pdb
+D:\lijint\Project\CCproject\Webservice\alipay-sdk-NET20161213174056\obj\Debug\AopSdk.csprojResolveAssemblyReference.cache
+D:\lijint\Project\CCproject\Webservice\alipay-sdk-NET20161213174056\obj\Debug\AopSdk.dll
+D:\lijint\Project\CCproject\Webservice\alipay-sdk-NET20161213174056\obj\Debug\AopSdk.pdb
