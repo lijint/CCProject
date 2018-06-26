@@ -449,6 +449,37 @@ namespace DownLoad.BLL.Login
 
             return result;
         }
+
+        //public Result GetSysParams()
+        //{
+        //    Result result = new Result();
+        //    result.StateCodeID = 0;
+        //    result.IsOK = false;
+        //    try
+        //    {
+        //        PCBEntities pcbEntities = new PCBEntities();
+
+        //        collcetDictionary<string, string, string> configTB = new collcetDictionary<string, string, string>();
+        //        configTB.Clear();
+        //        foreach (PCB_ConfigTB c in pcbEntities.PCB_ConfigTB)
+        //        {
+        //            configTB.Add(c.ConfigCode, c.ConfigValue, c.Remark);
+        //        }
+        //        result.ExtData = JsonConvert.SerializeObject(configTB.collectList);
+        //        result.IsOK = true;
+        //        result.StateCodeID = 1;
+        //        result.Description = "查询成功";
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+        //        result.IsOK = false;
+        //        result.Description = ex.Message;
+        //    }
+
+        //    return result;
+        //}
         #endregion
 
         #region 配置参数接口相关类

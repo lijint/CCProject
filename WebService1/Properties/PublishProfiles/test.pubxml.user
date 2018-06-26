@@ -8,65 +8,65 @@
     <LastUsedBuildConfiguration>Debug</LastUsedBuildConfiguration>
     <LastUsedPlatform>Any CPU</LastUsedPlatform>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>\\CHENC\Pro</_PublishTargetUrl>
+    <_PublishTargetUrl>E:\Product\BoardSystem\WebSite</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Code/Config.cs">
       <publishTime>12/21/2017 16:25:49</publishTime>
     </File>
     <File Include="bin/AopSdk.dll">
-      <publishTime>05/23/2018 14:36:22</publishTime>
+      <publishTime>06/21/2018 10:06:18</publishTime>
     </File>
     <File Include="bin/AopSdk.pdb">
-      <publishTime>05/23/2018 14:36:22</publishTime>
+      <publishTime>06/21/2018 10:06:18</publishTime>
     </File>
     <File Include="bin/F2FPayDll.dll">
-      <publishTime>05/23/2018 14:36:23</publishTime>
+      <publishTime>06/23/2018 11:20:01</publishTime>
     </File>
     <File Include="bin/F2FPayDll.pdb">
-      <publishTime>05/23/2018 14:36:23</publishTime>
+      <publishTime>06/23/2018 11:20:01</publishTime>
     </File>
     <File Include="bin/log4net.dll">
-      <publishTime>07/21/2015 16:01:33</publishTime>
+      <publishTime>06/21/2018 10:06:18</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>03/21/2018 07:15:16</publishTime>
+      <publishTime>06/21/2018 10:06:16</publishTime>
     </File>
     <File Include="bin/WebService1.dll">
-      <publishTime>06/20/2018 18:07:39</publishTime>
+      <publishTime>06/25/2018 17:44:38</publishTime>
     </File>
     <File Include="bin/WebService1.pdb">
-      <publishTime>06/07/2018 14:53:09</publishTime>
+      <publishTime>06/25/2018 17:44:38</publishTime>
     </File>
     <File Include="BLL/AliPay/AliPayWebService.asmx">
-      <publishTime>12/21/2017 17:16:23</publishTime>
+      <publishTime>06/21/2018 10:06:16</publishTime>
     </File>
     <File Include="BLL/FileManagement/FileManagementService.asmx">
-      <publishTime>05/30/2018 16:35:10</publishTime>
+      <publishTime>06/21/2018 10:06:16</publishTime>
     </File>
     <File Include="BLL/Login/Hand.aspx">
-      <publishTime>05/21/2018 15:30:04</publishTime>
+      <publishTime>06/21/2018 10:06:16</publishTime>
     </File>
     <File Include="BLL/Login/LoginWebService.asmx">
-      <publishTime>11/30/2017 15:13:45</publishTime>
+      <publishTime>06/21/2018 10:06:16</publishTime>
     </File>
     <File Include="BLL/UpdateFile/UpdateFileWebService.asmx">
-      <publishTime>12/05/2017 17:30:44</publishTime>
+      <publishTime>06/21/2018 10:06:16</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>11/23/2017 20:38:19</publishTime>
+      <publishTime>06/21/2018 10:06:16</publishTime>
     </File>
     <File Include="Log4Net.config">
-      <publishTime>05/15/2018 18:38:07</publishTime>
+      <publishTime>06/21/2018 10:06:16</publishTime>
     </File>
     <File Include="Model/Model.edmx.diagram">
       <publishTime>11/28/2017 16:06:27</publishTime>
     </File>
     <File Include="Model/PCBModel.edmx.diagram">
-      <publishTime>06/12/2018 16:21:26</publishTime>
+      <publishTime>06/21/2018 10:06:16</publishTime>
     </File>
     <File Include="Model/PMSModel.edmx.diagram">
-      <publishTime>03/26/2018 14:45:13</publishTime>
+      <publishTime>06/21/2018 10:06:16</publishTime>
     </File>
     <File Include="Model/XNetModel.edmx.diagram">
       <publishTime>11/28/2017 17:36:32</publishTime>
@@ -75,7 +75,7 @@
       <publishTime>11/23/2017 19:58:53</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/20/2018 19:51:39</publishTime>
+      <publishTime>06/24/2018 20:40:23</publishTime>
     </File>
   </ItemGroup>
 </Project>
