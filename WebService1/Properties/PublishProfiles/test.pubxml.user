@@ -21,7 +21,7 @@
       <publishTime>05/23/2018 14:36:22</publishTime>
     </File>
     <File Include="bin/F2FPayDll.dll">
-      <publishTime>06/26/2018 10:24:43</publishTime>
+      <publishTime>06/23/2018 11:20:01</publishTime>
     </File>
     <File Include="bin/F2FPayDll.pdb">
       <publishTime>05/23/2018 14:36:23</publishTime>
@@ -33,7 +33,7 @@
       <publishTime>06/21/2018 10:06:16</publishTime>
     </File>
     <File Include="bin/WebService1.dll">
-      <publishTime>06/26/2018 17:27:41</publishTime>
+      <publishTime>06/27/2018 16:35:26</publishTime>
     </File>
     <File Include="bin/WebService1.pdb">
       <publishTime>06/07/2018 14:53:09</publishTime>
@@ -75,7 +75,7 @@
       <publishTime>11/23/2017 19:58:53</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/26/2018 17:20:01</publishTime>
+      <publishTime>06/27/2018 09:23:24</publishTime>
     </File>
   </ItemGroup>
 </Project>

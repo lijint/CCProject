@@ -213,11 +213,10 @@ namespace DownLoad.BLL.AliPay
         /// 2.若有设置金额，校验是否存在预下单记录，若有且未支付，则删除返回金额，若有且已支付，则返回下载地址；
         /// 3.若有设置金额，校验是否存在预下单记录，若没有预下单记录，则返回金额；
         /// </summary>
-        /// <param name="account"></param>
         /// <param name="filecoverID"></param>
         /// <returns></returns>
         [WebMethod]
-        public Result CheckAndQueryFilecover(string account,string filecoverID)
+        public Result CheckAndQueryFilecover(string filecoverID)
         {
             Result result = new Result();
             try
@@ -233,6 +232,21 @@ namespace DownLoad.BLL.AliPay
                     result.Description = "未查询到指定数据";
                     return result;
                 }
+                List<AccessFile> accessFileList = new List<AccessFile>();
+                foreach (PCB_AccessFileTB pa in pcbEntities.PCB_AccessFileTB)
+                {
+                    if (pa.FileCoverID == fid)
+                    {
+                        AccessFile af = new AccessFile();
+                        af.AccessFileName = pa.AccessFileName;
+                        af.AccessFileURL = pa.AccessFileURL;
+                        af.FileExtension = pa.FileExtension;
+                        af.FileSize = pa.FileSize;
+                        af.FileMD5 = pa.FileMD5;
+                        accessFileList.Add(af);
+                    }
+                }
+
                 decimal filecoverprice;
                 if(decimal.TryParse(pcbfilecoverTB.Price,out filecoverprice))
                 {
@@ -241,7 +255,7 @@ namespace DownLoad.BLL.AliPay
                         //金额>0，查询预下单记录
                         LogHelper.WriteLog(GetType()).Info(filecoverprice.ToString());
 
-                        PCB_OrderTB pcborderTB = pcbEntities.PCB_OrderTB.FirstOrDefault(p => p.FileCoverID == fid && p.CreateAccount == account);
+                        PCB_OrderTB pcborderTB = pcbEntities.PCB_OrderTB.FirstOrDefault(p => p.FileCoverID == fid);
                         if(pcborderTB!=null)
                         {
                             //LogHelper.WriteLog(GetType()).Info(pcborderTB);
@@ -250,7 +264,7 @@ namespace DownLoad.BLL.AliPay
                             {
                                 result.Description = "文件已支付，返回数据类型为：文件下载地址";
 
-                                result.ExtData = pcbfilecoverTB.FileCoverURL;
+                                result.ExtData = JsonConvert.SerializeObject(accessFileList);
                             }
                             else
                             {
@@ -273,7 +287,7 @@ namespace DownLoad.BLL.AliPay
                     {
                         //金额==0，返回下载地址
                         LogHelper.WriteLog(GetType()).Info(filecoverprice.ToString());
-                        result.ExtData = pcbfilecoverTB.FileCoverURL;
+                        result.ExtData = JsonConvert.SerializeObject(accessFileList);
                         result.Description = "文件无需支付，返回数据类型为：文件下载地址";
 
                     }
@@ -290,6 +304,15 @@ namespace DownLoad.BLL.AliPay
                 result.Description = ex.Message;
             }
             return result;
+        }
+
+        private class AccessFile
+        {
+            public string AccessFileName;
+            public string AccessFileURL;
+            public string FileExtension;
+            public string FileSize;
+            public string FileMD5;
         }
 
         #endregion

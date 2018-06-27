@@ -380,14 +380,14 @@ namespace DownLoad.BLL.Common
                 builder.operator_id = ParameterAPI.GetConfig("OperatorID").ConfigValue;
 
                 //传入商品信息详情
-                //List<GoodsInfo> gList = new List<GoodsInfo>();
-                //GoodsInfo goods = new GoodsInfo();
-                //goods.goods_id = "goods id";
-                //goods.goods_name = "goods name";
-                //goods.price = "0.01";
-                //goods.quantity = "1";
-                //gList.Add(goods);
-                //builder.goods_detail = gList;
+                List<GoodsInfo> gList = new List<GoodsInfo>();
+                GoodsInfo goods = new GoodsInfo();
+                goods.goods_id = "goods id";
+                goods.goods_name = "goods name";
+                goods.price = "0.01";
+                goods.quantity = "1";
+                gList.Add(goods);
+                builder.goods_detail = gList;
 
                 //系统商接入可以填此参数用作返佣
                 //ExtendParams exParam = new ExtendParams();
@@ -431,6 +431,14 @@ namespace DownLoad.BLL.Common
                 orderTB.OrderPrice = pCBEntities.PCB_FileCoverTB.FirstOrDefault(p => p.FileCoverID == fid).Price;
                 orderTB.UpdateDateTime = DateTime.Now;
 
+                //foreach(PCB_OrderTB oTB in pCBEntities.PCB_OrderTB)
+                //{
+                //    if(oTB.CreateAccount == account && oTB.FileCoverID == fid)
+                //    {
+                //        pCBEntities.DeleteObject(oTB);
+                //        pCBEntities.SaveChanges();
+                //    }
+                //}
 
                 pCBEntities.AddToPCB_OrderTB(orderTB);
                 result.IsOK = Convert.ToBoolean(pCBEntities.SaveChanges());
