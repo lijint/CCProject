@@ -363,7 +363,16 @@ namespace DownLoad.BLL.Common
                 Guid g = new Guid(fileCoverID);
 
                 //订单总金额
-                builder.total_amount = pCBEntities.PCB_FileCoverTB.FirstOrDefault(p => p.FileCoverID == g).Price;
+
+                var pcbfilecoverTB = pCBEntities.PCB_FileCoverTB.FirstOrDefault(p => p.FileCoverID == g);
+                if (pcbfilecoverTB != null)
+                {
+                    builder.total_amount = pcbfilecoverTB.Price;
+                }
+                else
+                {
+                    throw new ArgumentNullException("without the data of fileCover");
+                }
                 //参与优惠计算的金额
                 //builder.discountable_amount = "";
                 //不参与优惠计算的金额

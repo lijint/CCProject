@@ -533,15 +533,17 @@ namespace DownLoad.BLL.Login
             {
                 PCBEntities pcbEntities = new PCBEntities();
 
-                collcetDictionary<string, string, string> configTB = new collcetDictionary<string, string, string>();
+                //collcetDictionary<string, string, string> configTB = new collcetDictionary<string, string, string>();
+                var configTBList = from cTB in pcbEntities.PCB_ConfigTB
+                                   select new { key = cTB.ConfigCode, value = cTB.ConfigValue, remark = cTB.Remark };
                 if (string.IsNullOrEmpty(strSysParamsKey))
                 {
-                    configTB.Clear();
-                    foreach (PCB_ConfigTB c in pcbEntities.PCB_ConfigTB)
-                    {
-                        configTB.Add(c.ConfigCode, c.ConfigValue, c.Remark);
-                    }
-                    result.ExtData = JsonConvert.SerializeObject(configTB.collectList);
+                    //configTB.Clear();
+                    //foreach (PCB_ConfigTB c in pcbEntities.PCB_ConfigTB)
+                    //{
+                    //    configTB.Add(c.ConfigCode, c.ConfigValue, c.Remark);
+                    //}
+                    result.ExtData = JsonConvert.SerializeObject(configTBList);
                     result.IsOK = true;
                     result.StateCodeID = 1;
                     result.Description = "查询成功";
@@ -556,9 +558,9 @@ namespace DownLoad.BLL.Login
                         result.Description = "无对应项";
                         return result;
                     }
-                    configTB.Clear();
-                    configTB.Add(configSysTB.ConfigCode, configSysTB.ConfigValue, configSysTB.Remark);
-                    result.ExtData = JsonConvert.SerializeObject(configTB.collectList);
+                    //configTB.Clear();
+                    //configTB.Add(configSysTB.ConfigCode, configSysTB.ConfigValue, configSysTB.Remark);
+                    result.ExtData = JsonConvert.SerializeObject(configTBList);
                     result.IsOK = true;
                     result.StateCodeID = 1;
                     result.Description = "查询成功";
@@ -574,75 +576,45 @@ namespace DownLoad.BLL.Login
             return result;
         }
 
-        //public Result GetSysParams()
+        #endregion
+
+        //#region 配置参数接口相关类
+        //private class collcetDictionary<T1, T2, T3>
         //{
-        //    Result result = new Result();
-        //    result.StateCodeID = 0;
-        //    result.IsOK = false;
-        //    try
+        //    private List<collcetCell<T1, T2, T3>> cList;
+        //    public List<collcetCell<T1, T2, T3>> collectList
         //    {
-        //        PCBEntities pcbEntities = new PCBEntities();
-
-        //        collcetDictionary<string, string, string> configTB = new collcetDictionary<string, string, string>();
-        //        configTB.Clear();
-        //        foreach (PCB_ConfigTB c in pcbEntities.PCB_ConfigTB)
-        //        {
-        //            configTB.Add(c.ConfigCode, c.ConfigValue, c.Remark);
-        //        }
-        //        result.ExtData = JsonConvert.SerializeObject(configTB.collectList);
-        //        result.IsOK = true;
-        //        result.StateCodeID = 1;
-        //        result.Description = "查询成功";
-
+        //        get { return cList; }
         //    }
-        //    catch (Exception ex)
+        //    public collcetDictionary()
         //    {
-        //        LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
-        //        result.IsOK = false;
-        //        result.Description = ex.Message;
+        //        cList = new List<collcetCell<T1, T2, T3>>();
         //    }
-
-        //    return result;
+        //    public void Add(T1 a1, T2 b1, T3 c1)
+        //    {
+        //        collcetCell<T1, T2, T3> c = new collcetCell<T1, T2, T3>(a1, b1, c1);
+        //        cList.Add(c);
+        //    }
+        //    public void Clear()
+        //    {
+        //        cList.Clear();
+        //    }
         //}
-        #endregion
 
-        #region 配置参数接口相关类
-        private class collcetDictionary<T1, T2, T3>
-        {
-            private List<collcetCell<T1, T2, T3>> cList;
-            public List<collcetCell<T1, T2, T3>> collectList
-            {
-                get { return cList; }
-            }
-            public collcetDictionary()
-            {
-                cList = new List<collcetCell<T1, T2, T3>>();
-            }
-            public void Add(T1 a1, T2 b1, T3 c1)
-            {
-                collcetCell<T1, T2, T3> c = new collcetCell<T1, T2, T3>(a1, b1, c1);
-                cList.Add(c);
-            }
-            public void Clear()
-            {
-                cList.Clear();
-            }
-        }
+        //private class collcetCell<T1, T2, T3>
+        //{
+        //    public T1 key;
+        //    public T2 value;
+        //    public T3 remark;
+        //    public collcetCell(T1 k, T2 v, T3 r)
+        //    {
+        //        key = k;
+        //        value = v;
+        //        remark = r;
+        //    }
+        //}
 
-        private class collcetCell<T1, T2, T3>
-        {
-            public T1 key;
-            public T2 value;
-            public T3 remark;
-            public collcetCell(T1 k, T2 v, T3 r)
-            {
-                key = k;
-                value = v;
-                remark = r;
-            }
-        }
-
-        #endregion
+        //#endregion
 
         #endregion
 

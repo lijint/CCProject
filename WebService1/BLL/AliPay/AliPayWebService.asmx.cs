@@ -232,21 +232,16 @@ namespace DownLoad.BLL.AliPay
                     result.Description = "未查询到指定数据";
                     return result;
                 }
-                List<AccessFile> accessFileList = new List<AccessFile>();
-                foreach (PCB_AccessFileTB pa in pcbEntities.PCB_AccessFileTB)
-                {
-                    if (pa.FileCoverID == fid)
-                    {
-                        AccessFile af = new AccessFile();
-                        af.AccessFileName = pa.AccessFileName;
-                        af.AccessFileURL = pa.AccessFileURL;
-                        af.FileExtension = pa.FileExtension;
-                        af.FileSize = pa.FileSize;
-                        af.FileMD5 = pa.FileMD5;
-                        accessFileList.Add(af);
-                    }
-                }
-
+                var accessFileList = from accessfile in pcbEntities.PCB_AccessFileTB
+                                     where accessfile.FileCoverID == fid
+                                     select new
+                                     {
+                                         AccessFileName = accessfile.AccessFileName,
+                                         AccessFileURL = accessfile.AccessFileURL,
+                                         FileExtension = accessfile.FileExtension,
+                                         FileSize = accessfile.FileSize,
+                                         FileMD5 = accessfile.FileMD5
+                                     };
                 decimal filecoverprice;
                 if(decimal.TryParse(pcbfilecoverTB.Price,out filecoverprice))
                 {
@@ -304,15 +299,6 @@ namespace DownLoad.BLL.AliPay
                 result.Description = ex.Message;
             }
             return result;
-        }
-
-        private class AccessFile
-        {
-            public string AccessFileName;
-            public string AccessFileURL;
-            public string FileExtension;
-            public string FileSize;
-            public string FileMD5;
         }
 
         #endregion
