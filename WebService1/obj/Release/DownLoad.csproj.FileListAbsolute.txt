@@ -33,3 +33,14 @@ D:\lijint\Project\CCproject\Webservice\WebService1\bin\F2FPayDll.pdb
 D:\lijint\Project\CCproject\Webservice\WebService1\obj\Release\DownLoad.csprojResolveAssemblyReference.cache
 D:\lijint\Project\CCproject\Webservice\WebService1\obj\Release\WebService1.dll
 D:\lijint\Project\CCproject\Webservice\WebService1\obj\Release\WebService1.pdb
+E:\Product\lijint-CCProject-master\CCProject-master\WebService1\bin\WebService1.dll.config
+E:\Product\lijint-CCProject-master\CCProject-master\WebService1\bin\WebService1.dll
+E:\Product\lijint-CCProject-master\CCProject-master\WebService1\bin\WebService1.pdb
+E:\Product\lijint-CCProject-master\CCProject-master\WebService1\bin\AopSdk.dll
+E:\Product\lijint-CCProject-master\CCProject-master\WebService1\bin\F2FPayDll.dll
+E:\Product\lijint-CCProject-master\CCProject-master\WebService1\bin\AopSdk.pdb
+E:\Product\lijint-CCProject-master\CCProject-master\WebService1\bin\F2FPayDll.pdb
+E:\Product\lijint-CCProject-master\CCProject-master\WebService1\obj\Release\DownLoad.csprojResolveAssemblyReference.cache
+E:\Product\lijint-CCProject-master\CCProject-master\WebService1\obj\Release\DownLoad.csproj.CoreCompileInputs.cache
+E:\Product\lijint-CCProject-master\CCProject-master\WebService1\obj\Release\WebService1.dll
+E:\Product\lijint-CCProject-master\CCProject-master\WebService1\obj\Release\WebService1.pdb

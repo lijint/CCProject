@@ -21,7 +21,7 @@ namespace DownLoad.BLL.Login
             TimeSpan UseTime = DateTime.Now - Convert.ToDateTime(dateTime);
             if (UseTime.Seconds >= 60)
             {
-                Response.Redirect(ParameterAPI.GetConfig("RegisterFURL").ConfigValue, false);
+                Response.Redirect(ParameterAPI.GetConfig("RegisterFURL").ConfigValue + "?mailaddr=" + mailAddress, false);
             }
             else
             {
@@ -35,11 +35,11 @@ namespace DownLoad.BLL.Login
                     bool isok = Convert.ToBoolean(pCBEntities.SaveChanges());
                     if (isok)
                     {
-                        Response.Redirect(ParameterAPI.GetConfig("RegisterSURL").ConfigValue, false);
+                        Response.Redirect(ParameterAPI.GetConfig("RegisterSURL").ConfigValue+ "?mailaddr="+ mailAddress + "&isconfirm=true", false);
                     }
                     else
                     {
-                        Response.Redirect(ParameterAPI.GetConfig("RegisterFURL").ConfigValue, false);
+                        Response.Redirect(ParameterAPI.GetConfig("RegisterFURL").ConfigValue + "?mailaddr=" + mailAddress, false);
                     }
                 }
             }

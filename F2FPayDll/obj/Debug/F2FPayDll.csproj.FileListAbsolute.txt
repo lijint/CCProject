@@ -104,3 +104,12 @@ D:\lijint\Project\CCproject\Webservice\F2FPayDll\bin\Debug\AopSdk.pdb
 D:\lijint\Project\CCproject\Webservice\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
 D:\lijint\Project\CCproject\Webservice\F2FPayDll\obj\Debug\F2FPayDll.dll
 D:\lijint\Project\CCproject\Webservice\F2FPayDll\obj\Debug\F2FPayDll.pdb
+E:\Product\lijint-CCProject-master\CCProject-master\F2FPayDll\bin\Debug\F2FPayDll.dll
+E:\Product\lijint-CCProject-master\CCProject-master\F2FPayDll\bin\Debug\F2FPayDll.pdb
+E:\Product\lijint-CCProject-master\CCProject-master\F2FPayDll\bin\Debug\AopSdk.dll
+E:\Product\lijint-CCProject-master\CCProject-master\F2FPayDll\bin\Debug\ThoughtWorks.QRCode.dll
+E:\Product\lijint-CCProject-master\CCProject-master\F2FPayDll\bin\Debug\AopSdk.pdb
+E:\Product\lijint-CCProject-master\CCProject-master\F2FPayDll\obj\Debug\F2FPayDll.csprojResolveAssemblyReference.cache
+E:\Product\lijint-CCProject-master\CCProject-master\F2FPayDll\obj\Debug\F2FPayDll.csproj.CoreCompileInputs.cache
+E:\Product\lijint-CCProject-master\CCProject-master\F2FPayDll\obj\Debug\F2FPayDll.dll
+E:\Product\lijint-CCProject-master\CCProject-master\F2FPayDll\obj\Debug\F2FPayDll.pdb

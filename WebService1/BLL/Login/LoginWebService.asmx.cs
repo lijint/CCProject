@@ -349,16 +349,135 @@ namespace DownLoad.BLL.Login
 
         #region 系统参数
 
-        #region 设置系统参数
+        #region 新增系统参数
         /// <summary>
-        /// 设置系统参数
+        /// 新增系统参数
         /// </summary>
         /// <param name="key"></param>
         /// <param name="value"></param>
         /// <param name="remark"></param>
         /// <returns></returns>
         [WebMethod]
-        public Result SetSysParams(string key, string value, string remark)
+        public Result AddSysParams(string key, string value, string remark)
+        {
+            Result result = new Result();
+            result.StateCodeID = 0;
+            result.IsOK = false;
+            try
+            {
+                PCBEntities pCBEntities = new PCBEntities();
+                //PCB_ConfigTB configSys = ParameterAPI.GetConfig(key);
+                PCB_ConfigTB configSys = pCBEntities.PCB_ConfigTB.FirstOrDefault(p => p.ConfigCode == key);
+                if (configSys == null)
+                {
+                    //增加
+                    PCB_ConfigTB confignew = new PCB_ConfigTB();
+                    confignew.ConfigID = System.Guid.NewGuid();
+                    confignew.ConfigCode = key;
+                    confignew.ConfigValue = value;
+                    confignew.Remark = remark;
+                    pCBEntities.AddToPCB_ConfigTB(confignew);
+
+                    result.IsOK = Convert.ToBoolean(pCBEntities.SaveChanges());
+                    if (result.IsOK)
+                        result.Description = "增加" + key + "成功";
+
+                }
+                else
+                {
+                    ////更新
+                    //configSys.ConfigValue = value;
+                    //configSys.Remark = remark;
+                    //pCBEntities.Refresh(System.Data.Objects.RefreshMode.ClientWins, configSys);
+                    //result.IsOK = Convert.ToBoolean(pCBEntities.SaveChanges());
+                    ////result = Common.Common.UpdateConfigTB(key, value, remark);
+                    //if (result.IsOK)
+                    //    result.Description = "更新" + key + "成功";
+                    result.IsOK = false;
+                    result.StateCodeID = 1;
+                    result.Description = "该项已存在";
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+                result.IsOK = false;
+                result.Description = ex.Message;
+            }
+            return result;
+
+        }
+        #endregion
+
+        #region 更新系统参数
+        /// <summary>
+        /// 更新系统参数
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        /// <param name="remark"></param>
+        /// <returns></returns>
+        [WebMethod]
+        public Result UpdateSysParams(string key, string value, string remark)
+        {
+            Result result = new Result();
+            result.StateCodeID = 0;
+            result.IsOK = false;
+            try
+            {
+                PCBEntities pCBEntities = new PCBEntities();
+                //PCB_ConfigTB configSys = ParameterAPI.GetConfig(key);
+                PCB_ConfigTB configSys = pCBEntities.PCB_ConfigTB.FirstOrDefault(p => p.ConfigCode == key);
+                if (configSys == null)
+                {
+                    ////增加
+                    //PCB_ConfigTB confignew = new PCB_ConfigTB();
+                    //confignew.ConfigID = new Guid();
+                    //confignew.ConfigCode = key;
+                    //confignew.ConfigValue = value;
+                    //confignew.Remark = remark;
+                    //pCBEntities.AddToPCB_ConfigTB(confignew);
+
+                    //result.IsOK = Convert.ToBoolean(pCBEntities.SaveChanges());
+                    //if (result.IsOK)
+                    //    result.Description = "增加" + key + "成功";
+                    result.IsOK = false;
+                    result.StateCodeID = 1;
+                    result.Description = "没有找到需要更新对应项";
+                    return result;
+                }
+                else
+                {
+                    //更新
+                    configSys.ConfigValue = value;
+                    configSys.Remark = remark;
+                    pCBEntities.Refresh(System.Data.Objects.RefreshMode.ClientWins, configSys);
+                    result.IsOK = Convert.ToBoolean(pCBEntities.SaveChanges());
+                    //result = Common.Common.UpdateConfigTB(key, value, remark);
+                    if (result.IsOK)
+                        result.Description = "更新" + key + "成功";
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+                result.IsOK = false;
+                result.Description = ex.Message;
+            }
+            return result;
+
+        }
+        #endregion
+
+        #region 删除系统参数
+        /// <summary>
+        /// 删除系统参数
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        [WebMethod]
+        public Result DelSysParams(string key)
         {
             Result result = new Result();
             result.StateCodeID = 0;
@@ -374,13 +493,17 @@ namespace DownLoad.BLL.Login
                     result.Description = "无对应项";
                     return result;
                 }
-                configSys.ConfigValue = value;
-                configSys.Remark = remark;
-                pCBEntities.Refresh(System.Data.Objects.RefreshMode.ClientWins, configSys);
-                result.IsOK = Convert.ToBoolean(pCBEntities.SaveChanges());
-                //result = Common.Common.UpdateConfigTB(key, value, remark);
-                if (result.IsOK)
-                    result.Description = "设置成功";
+                else
+                {
+                    //del
+                    pCBEntities.DeleteObject(configSys);
+                    result.IsOK = Convert.ToBoolean(pCBEntities.SaveChanges());
+                    //result = Common.Common.UpdateConfigTB(key, value, remark);
+                    if (result.IsOK)
+                        result.Description = "删除" + key + "成功";
+                }
+                return result;
+
             }
             catch (Exception ex)
             {
@@ -392,6 +515,7 @@ namespace DownLoad.BLL.Login
 
         }
         #endregion
+
 
         #region 获取系统参数
         /// <summary>
@@ -409,15 +533,17 @@ namespace DownLoad.BLL.Login
             {
                 PCBEntities pcbEntities = new PCBEntities();
 
-                collcetDictionary<string, string, string> configTB = new collcetDictionary<string, string, string>();
+                //collcetDictionary<string, string, string> configTB = new collcetDictionary<string, string, string>();
+                var configTBList = from cTB in pcbEntities.PCB_ConfigTB
+                                   select new { key = cTB.ConfigCode, value = cTB.ConfigValue, remark = cTB.Remark };
                 if (string.IsNullOrEmpty(strSysParamsKey))
                 {
-                    configTB.Clear();
-                    foreach (PCB_ConfigTB c in pcbEntities.PCB_ConfigTB)
-                    {
-                        configTB.Add(c.ConfigCode, c.ConfigValue, c.Remark);
-                    }
-                    result.ExtData = JsonConvert.SerializeObject(configTB.collectList);
+                    //configTB.Clear();
+                    //foreach (PCB_ConfigTB c in pcbEntities.PCB_ConfigTB)
+                    //{
+                    //    configTB.Add(c.ConfigCode, c.ConfigValue, c.Remark);
+                    //}
+                    result.ExtData = JsonConvert.SerializeObject(configTBList);
                     result.IsOK = true;
                     result.StateCodeID = 1;
                     result.Description = "查询成功";
@@ -432,9 +558,9 @@ namespace DownLoad.BLL.Login
                         result.Description = "无对应项";
                         return result;
                     }
-                    configTB.Clear();
-                    configTB.Add(configSysTB.ConfigCode, configSysTB.ConfigValue, configSysTB.Remark);
-                    result.ExtData = JsonConvert.SerializeObject(configTB.collectList);
+                    //configTB.Clear();
+                    //configTB.Add(configSysTB.ConfigCode, configSysTB.ConfigValue, configSysTB.Remark);
+                    result.ExtData = JsonConvert.SerializeObject(configTBList);
                     result.IsOK = true;
                     result.StateCodeID = 1;
                     result.Description = "查询成功";
@@ -450,75 +576,45 @@ namespace DownLoad.BLL.Login
             return result;
         }
 
-        //public Result GetSysParams()
+        #endregion
+
+        //#region 配置参数接口相关类
+        //private class collcetDictionary<T1, T2, T3>
         //{
-        //    Result result = new Result();
-        //    result.StateCodeID = 0;
-        //    result.IsOK = false;
-        //    try
+        //    private List<collcetCell<T1, T2, T3>> cList;
+        //    public List<collcetCell<T1, T2, T3>> collectList
         //    {
-        //        PCBEntities pcbEntities = new PCBEntities();
-
-        //        collcetDictionary<string, string, string> configTB = new collcetDictionary<string, string, string>();
-        //        configTB.Clear();
-        //        foreach (PCB_ConfigTB c in pcbEntities.PCB_ConfigTB)
-        //        {
-        //            configTB.Add(c.ConfigCode, c.ConfigValue, c.Remark);
-        //        }
-        //        result.ExtData = JsonConvert.SerializeObject(configTB.collectList);
-        //        result.IsOK = true;
-        //        result.StateCodeID = 1;
-        //        result.Description = "查询成功";
-
+        //        get { return cList; }
         //    }
-        //    catch (Exception ex)
+        //    public collcetDictionary()
         //    {
-        //        LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
-        //        result.IsOK = false;
-        //        result.Description = ex.Message;
+        //        cList = new List<collcetCell<T1, T2, T3>>();
         //    }
-
-        //    return result;
+        //    public void Add(T1 a1, T2 b1, T3 c1)
+        //    {
+        //        collcetCell<T1, T2, T3> c = new collcetCell<T1, T2, T3>(a1, b1, c1);
+        //        cList.Add(c);
+        //    }
+        //    public void Clear()
+        //    {
+        //        cList.Clear();
+        //    }
         //}
-        #endregion
 
-        #region 配置参数接口相关类
-        private class collcetDictionary<T1, T2, T3>
-        {
-            private List<collcetCell<T1, T2, T3>> cList;
-            public List<collcetCell<T1, T2, T3>> collectList
-            {
-                get { return cList; }
-            }
-            public collcetDictionary()
-            {
-                cList = new List<collcetCell<T1, T2, T3>>();
-            }
-            public void Add(T1 a1, T2 b1, T3 c1)
-            {
-                collcetCell<T1, T2, T3> c = new collcetCell<T1, T2, T3>(a1, b1, c1);
-                cList.Add(c);
-            }
-            public void Clear()
-            {
-                cList.Clear();
-            }
-        }
+        //private class collcetCell<T1, T2, T3>
+        //{
+        //    public T1 key;
+        //    public T2 value;
+        //    public T3 remark;
+        //    public collcetCell(T1 k, T2 v, T3 r)
+        //    {
+        //        key = k;
+        //        value = v;
+        //        remark = r;
+        //    }
+        //}
 
-        private class collcetCell<T1, T2, T3>
-        {
-            public T1 key;
-            public T2 value;
-            public T3 remark;
-            public collcetCell(T1 k, T2 v, T3 r)
-            {
-                key = k;
-                value = v;
-                remark = r;
-            }
-        }
-
-        #endregion
+        //#endregion
 
         #endregion
 

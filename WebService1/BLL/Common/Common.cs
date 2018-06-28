@@ -363,7 +363,16 @@ namespace DownLoad.BLL.Common
                 Guid g = new Guid(fileCoverID);
 
                 //订单总金额
-                builder.total_amount = pCBEntities.PCB_FileCoverTB.FirstOrDefault(p => p.FileCoverID == g).Price;
+
+                var pcbfilecoverTB = pCBEntities.PCB_FileCoverTB.FirstOrDefault(p => p.FileCoverID == g);
+                if (pcbfilecoverTB != null)
+                {
+                    builder.total_amount = pcbfilecoverTB.Price;
+                }
+                else
+                {
+                    throw new ArgumentNullException("without the data of fileCover");
+                }
                 //参与优惠计算的金额
                 //builder.discountable_amount = "";
                 //不参与优惠计算的金额
@@ -431,6 +440,14 @@ namespace DownLoad.BLL.Common
                 orderTB.OrderPrice = pCBEntities.PCB_FileCoverTB.FirstOrDefault(p => p.FileCoverID == fid).Price;
                 orderTB.UpdateDateTime = DateTime.Now;
 
+                //foreach(PCB_OrderTB oTB in pCBEntities.PCB_OrderTB)
+                //{
+                //    if(oTB.CreateAccount == account && oTB.FileCoverID == fid)
+                //    {
+                //        pCBEntities.DeleteObject(oTB);
+                //        pCBEntities.SaveChanges();
+                //    }
+                //}
 
                 pCBEntities.AddToPCB_OrderTB(orderTB);
                 result.IsOK = Convert.ToBoolean(pCBEntities.SaveChanges());
