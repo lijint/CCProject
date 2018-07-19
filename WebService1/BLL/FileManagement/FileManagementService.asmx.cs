@@ -456,8 +456,282 @@ namespace DownLoad.BLL.FileManagement
             return result;
         }
 
+        /// <summary>
+        /// 共享目录创建
+        /// </summary>
+        /// <param name="qaFolderName">共享目录名称</param>
+        /// <param name="account">创建者</param>
+        /// <returns></returns>
+        [WebMethod(Description = "共享目录创建")]
+        public Result NewQaFolder(string qaFolderName,string account)
+        {
+            var result = new Result();
+            try
+            {
+                var pcbEntities = new PCBEntities();
+                var count = pcbEntities.PCB_QAFolderTB.Count<PCB_QAFolderTB>(p => p.QAFolderName == qaFolderName &&p.CreateAccount==account);
+                if (count > 0)
+                {
+                    result.IsOK = false;
+                    result.Description = "改目录名称已经存在，请重新命名";
+                    return result;
+                }
+                var dir = @ParameterAPI.GetConfig("ShareQAFile").ConfigValue + @"\\" + account + @"\\" + qaFolderName;
+                if (!Directory.Exists(dir))
+                {
+                    Directory.CreateDirectory(dir);
+                }
+                //byte[] coverPhoto = Convert.FromBase64String(fileData);
+                //MemoryStream ms = new MemoryStream(coverPhoto);
+                //Bitmap bmp = new Bitmap(ms);
+
+                var pcbQaFolderTb = new PCB_QAFolderTB
+                {
+                    QAFolderID = System.Guid.NewGuid(),
+                    QAFolderName = qaFolderName,
+                    CreateAccount = account,
+                    CreateDateTime = DateTime.Now
+                };
 
 
+
+            
+               
+                pcbEntities.AddToPCB_QAFolderTB(pcbQaFolderTb);
+                result.IsOK = Convert.ToBoolean(pcbEntities.SaveChanges());
+                if (!result.IsOK)
+                {
+                  
+                    result.Description = "创建失败";
+                    Directory.Delete(dir,true);
+                    return result;
+                }
+                result.Description = "创建成功";
+            }
+            catch (Exception ex)
+            {
+
+                LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+                result.IsOK = false;
+                result.Description = ex.Message;
+            }
+            return result;
+
+        }
+
+        /// <summary>
+        /// 上传共享文件
+        /// </summary>
+        /// <param name="qaFile"></param>
+        /// <param name="qaFolderName"></param>
+        /// <param name="account"></param>
+        /// <param name="fileExtension"></param>
+        /// <param name="qaFileName"></param>
+        /// <returns></returns>
+        [WebMethod(Description = "上传共享文件")]
+        public Result UploadQaFile(byte[] qaFile, string qaFolderName, string account, string fileExtension, string qaFileName)
+        {
+            var result = new Result();
+            var saveToUrl = @ParameterAPI.GetConfig("ShareQAFile").ConfigValue + @"\\" + account + @"\\" + qaFolderName + @"\\" + qaFileName + "." + fileExtension;
+            try
+            {
+                var pcbEntities = new PCBEntities();
+                var pcbQaFolderTb = pcbEntities.PCB_QAFolderTB.FirstOrDefault(p => p.QAFolderName == qaFolderName && p.CreateAccount == account);
+                if (pcbQaFolderTb == null|| pcbQaFolderTb==default(PCB_QAFolderTB))
+                {
+                    result.IsOK = false;
+                    result.Description = "找不到该目录";
+                    return result;
+                }
+
+                
+                var count = pcbEntities.PCB_QAFileTB.Count<PCB_QAFileTB>(p => p.QAFolderID == pcbQaFolderTb.QAFolderID && p.CreateAccount == account&&p.QAFileName==qaFileName&&p.FileExtension==fileExtension);
+                if (count>0)
+                {
+                    result.IsOK = false;
+                    result.Description = "该目录已经存在改文件";
+                    return result;
+                }
+                result = Common.Common.FileWrite(saveToUrl, qaFile);
+                if (!result.IsOK)
+                {
+                    return result;
+
+                }
+                var  pcbQaFileTb = new PCB_QAFileTB();
+                pcbQaFileTb.QAFileID = Guid.NewGuid();
+                pcbQaFileTb.QAFolderID = pcbQaFolderTb.QAFolderID;
+                pcbQaFileTb.QAFileName = qaFileName;
+                pcbQaFileTb.QAFileURL = ParameterAPI.GetConfig("DowLoadShareFileURL").ConfigValue + "//" + account + "//" + qaFolderName + "//" + qaFileName + "." + fileExtension;
+                pcbQaFileTb.FileExtension = fileExtension;
+                pcbQaFileTb.CreateAccount = account;
+                pcbQaFileTb.FileMD5 = Common.Common.GetMD5Hash(qaFile);
+                pcbQaFileTb.FileSize = qaFile.Length.ToString();
+                pcbQaFileTb.CreateDateTime = DateTime.Now;
+                pcbEntities.AddToPCB_QAFileTB(pcbQaFileTb);
+                result.IsOK = Convert.ToBoolean(pcbEntities.SaveChanges());
+                if (!result.IsOK)
+                {
+                    File.Delete(saveToUrl);
+                    result.Description = "上传失败";
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+                result.IsOK = false;
+                result.Description = ex.Message;
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// 获取共享目录
+        /// </summary>
+        /// <param name="account"></param>
+        /// <returns></returns>
+        [WebMethod(Description = "获取共享目录")]
+        public Result GetOwnQaFolder(string account)
+        {
+            var result=new Result();
+            try
+            {
+                var pcbEntities = new PCBEntities();
+                var list = pcbEntities.PCB_QAFolderTB.Select(p => new{p.QAFolderID, p.QAFolderName, p.CreateAccount, p.CreateDateTime}).Where(p => p.CreateAccount == account);
+                result.IsOK = true;
+                result.ExtData = JsonConvert.SerializeObject(list);
+            }
+            catch (Exception ex)
+            {
+
+                LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+                result.IsOK = false;
+                result.Description = ex.Message;
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// 获取目录下的文件
+        /// </summary>
+        /// <param name="qaFolderId"></param>
+        /// <param name="account"></param>
+        /// <returns></returns>
+        [WebMethod(Description = "获取目录下的文件")]
+        public Result GetOwnQaFile(string qaFolderId,string account)
+        {
+            var result = new Result();
+            try
+            {
+                var pcbEntities = new PCBEntities();
+                var id=new Guid(qaFolderId);
+                var list = pcbEntities.PCB_QAFileTB.Where(p => p.CreateAccount == account &&p.QAFolderID== id).Select(p => new { p.QAFolderID, p.QAFileURL,p.QAFileName,p.FileExtension,p.FileSize ,p.CreateAccount,p.CreateDateTime });
+                result.IsOK = true;
+                result.ExtData = JsonConvert.SerializeObject(list);
+            }
+            catch (Exception ex)
+            {
+
+                LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+                result.IsOK = false;
+                result.Description = ex.Message;
+            }
+
+            return result;
+
+        }
+
+        /// <summary>
+        /// 生成分享码
+        /// </summary>
+        /// <param name="qaFolderId"></param>
+        /// <param name="account"></param>
+        /// <param name="durationTime"></param>
+        /// <returns></returns>
+        [WebMethod(Description = "生成分享码")]
+        public Result NewShareCode(string qaFolderId, string account,string durationTime)
+        {
+            var result = new Result();
+            try
+            {
+                var shareCode = Common.Common.Encrypt(qaFolderId + "," + account+","+DateTime.Now);
+                var pcbEntities = new PCBEntities();
+                var pcbShareCodeTb=new PCB_ShareCodeTB();
+                pcbShareCodeTb.QAFolderID =new Guid(qaFolderId);
+                pcbShareCodeTb.ShareCode = shareCode;
+                pcbShareCodeTb.CreateAccount = account;
+                pcbShareCodeTb.EffectDatetime=DateTime.Now.AddMinutes(int.Parse(durationTime));
+                pcbShareCodeTb.CreateDateTime=DateTime.Now;
+                pcbEntities.AddToPCB_ShareCodeTB(pcbShareCodeTb);
+                var list = pcbEntities.PCB_ShareCodeTB.Where(p => p.EffectDatetime < DateTime.Now);
+                
+                foreach (var item in list)
+                {
+                    pcbEntities.DeleteObject(item);
+                }
+
+                result.IsOK = Convert.ToBoolean(pcbEntities.SaveChanges());
+                if (!result.IsOK)
+                {
+
+                    result.Description = "生成失败";
+                   
+                    return result;
+                }
+                result.Description = "生成成功";
+                result.ExtData = shareCode;
+            }
+            catch (Exception ex)
+            {
+
+                LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+                result.IsOK = false;
+                result.Description = ex.Message;
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="shareCode"></param>
+        /// <returns></returns>
+        [WebMethod(Description = "通过分享码获取分享文件")]
+        public Result GetQaFileByShareCoed(string shareCode)
+        {
+            var result = new Result();
+            try
+            {
+
+                var account = Common.Common.Decrypt(shareCode).Split(',')[1];
+                var qaFolderId = new Guid(Common.Common.Decrypt(shareCode).Split(',')[0]);
+                var pcbEntities = new PCBEntities();
+                var pcbShareCodeTb = pcbEntities.PCB_ShareCodeTB.FirstOrDefault(p =>p.ShareCode==shareCode&&
+                    p.CreateAccount == account && p.QAFolderID == qaFolderId && p.EffectDatetime >= DateTime.Now);
+                if (pcbShareCodeTb==null|| pcbShareCodeTb==default(PCB_ShareCodeTB))
+                {
+                    result.IsOK = false;
+                    result.Description = "该分享码失效或者不存在";
+                    return result;
+                }
+
+                result = GetOwnQaFile(qaFolderId.ToString(),account);
+            }
+            catch (Exception ex)
+            {
+
+                LogHelper.WriteLog(GetType()).Info(ex.StackTrace);
+                result.IsOK = false;
+                result.Description = ex.Message;
+            }
+
+            return result;
+        }
 
         [WebMethod]
         public Result test(string file,string id,string type,string account,string hz,string name)
@@ -473,9 +747,14 @@ namespace DownLoad.BLL.FileManagement
             {
                 result = UploadAccessFile(bt, id, account, hz, name);
             }
-            else
+            else if (type == "2")       
             {
                 result = UploadFileCover(bt, account, hz, name);
+            }
+            else
+            {
+
+                result = UploadQaFile(bt, id, account, hz, name);
             }
             return result;
 

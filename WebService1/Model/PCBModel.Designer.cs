@@ -11,7 +11,7 @@
 [assembly: global::System.Data.Objects.DataClasses.EdmSchemaAttribute()]
 
 // 原始文件名:
-// 生成日期: 2018/6/12 16:21:26
+// 生成日期: 2018/7/1 20:28:02
 namespace DownLoad.Model
 {
     
@@ -1442,6 +1442,57 @@ namespace DownLoad.Model
         [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
         private global::System.Data.Objects.ObjectQuery<PCB_OrderTB> _PCB_OrderTB;
         /// <summary>
+        /// 架构中不存在 PCB_QAFileTB 的注释。
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public global::System.Data.Objects.ObjectQuery<PCB_QAFileTB> PCB_QAFileTB
+        {
+            get
+            {
+                if ((this._PCB_QAFileTB == null))
+                {
+                    this._PCB_QAFileTB = base.CreateQuery<PCB_QAFileTB>("[PCB_QAFileTB]");
+                }
+                return this._PCB_QAFileTB;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private global::System.Data.Objects.ObjectQuery<PCB_QAFileTB> _PCB_QAFileTB;
+        /// <summary>
+        /// 架构中不存在 PCB_QAFolderTB 的注释。
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public global::System.Data.Objects.ObjectQuery<PCB_QAFolderTB> PCB_QAFolderTB
+        {
+            get
+            {
+                if ((this._PCB_QAFolderTB == null))
+                {
+                    this._PCB_QAFolderTB = base.CreateQuery<PCB_QAFolderTB>("[PCB_QAFolderTB]");
+                }
+                return this._PCB_QAFolderTB;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private global::System.Data.Objects.ObjectQuery<PCB_QAFolderTB> _PCB_QAFolderTB;
+        /// <summary>
+        /// 架构中不存在 PCB_ShareCodeTB 的注释。
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public global::System.Data.Objects.ObjectQuery<PCB_ShareCodeTB> PCB_ShareCodeTB
+        {
+            get
+            {
+                if ((this._PCB_ShareCodeTB == null))
+                {
+                    this._PCB_ShareCodeTB = base.CreateQuery<PCB_ShareCodeTB>("[PCB_ShareCodeTB]");
+                }
+                return this._PCB_ShareCodeTB;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private global::System.Data.Objects.ObjectQuery<PCB_ShareCodeTB> _PCB_ShareCodeTB;
+        /// <summary>
         /// 架构中不存在 PCB_AccessFileTB 的注释。
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
@@ -1481,5 +1532,614 @@ namespace DownLoad.Model
         {
             base.AddObject("PCB_OrderTB", pCB_OrderTB);
         }
+        /// <summary>
+        /// 架构中不存在 PCB_QAFileTB 的注释。
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public void AddToPCB_QAFileTB(PCB_QAFileTB pCB_QAFileTB)
+        {
+            base.AddObject("PCB_QAFileTB", pCB_QAFileTB);
+        }
+        /// <summary>
+        /// 架构中不存在 PCB_QAFolderTB 的注释。
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public void AddToPCB_QAFolderTB(PCB_QAFolderTB pCB_QAFolderTB)
+        {
+            base.AddObject("PCB_QAFolderTB", pCB_QAFolderTB);
+        }
+        /// <summary>
+        /// 架构中不存在 PCB_ShareCodeTB 的注释。
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public void AddToPCB_ShareCodeTB(PCB_ShareCodeTB pCB_ShareCodeTB)
+        {
+            base.AddObject("PCB_ShareCodeTB", pCB_ShareCodeTB);
+        }
+    }
+    /// <summary>
+    /// 架构中不存在 PCBModel.PCB_QAFileTB 的注释。
+    /// </summary>
+    /// <KeyProperties>
+    /// QAFileID
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="PCBModel", Name="PCB_QAFileTB")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class PCB_QAFileTB : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// 创建新的 PCB_QAFileTB 对象。
+        /// </summary>
+        /// <param name="qAFileID">QAFileID 的初始值。</param>
+        /// <param name="qAFolderID">QAFolderID 的初始值。</param>
+        /// <param name="qAFileName">QAFileName 的初始值。</param>
+        /// <param name="qAFileURL">QAFileURL 的初始值。</param>
+        /// <param name="fileExtension">FileExtension 的初始值。</param>
+        /// <param name="fileSize">FileSize 的初始值。</param>
+        /// <param name="fileMD5">FileMD5 的初始值。</param>
+        /// <param name="createAccount">CreateAccount 的初始值。</param>
+        /// <param name="createDateTime">CreateDateTime 的初始值。</param>
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public static PCB_QAFileTB CreatePCB_QAFileTB(global::System.Guid qAFileID, global::System.Guid qAFolderID, string qAFileName, string qAFileURL, string fileExtension, string fileSize, string fileMD5, string createAccount, global::System.DateTime createDateTime)
+        {
+            PCB_QAFileTB pCB_QAFileTB = new PCB_QAFileTB();
+            pCB_QAFileTB.QAFileID = qAFileID;
+            pCB_QAFileTB.QAFolderID = qAFolderID;
+            pCB_QAFileTB.QAFileName = qAFileName;
+            pCB_QAFileTB.QAFileURL = qAFileURL;
+            pCB_QAFileTB.FileExtension = fileExtension;
+            pCB_QAFileTB.FileSize = fileSize;
+            pCB_QAFileTB.FileMD5 = fileMD5;
+            pCB_QAFileTB.CreateAccount = createAccount;
+            pCB_QAFileTB.CreateDateTime = createDateTime;
+            return pCB_QAFileTB;
+        }
+        /// <summary>
+        /// 架构中不存在属性 QAFileID 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public global::System.Guid QAFileID
+        {
+            get
+            {
+                return this._QAFileID;
+            }
+            set
+            {
+                this.OnQAFileIDChanging(value);
+                this.ReportPropertyChanging("QAFileID");
+                this._QAFileID = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("QAFileID");
+                this.OnQAFileIDChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private global::System.Guid _QAFileID;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFileIDChanging(global::System.Guid value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFileIDChanged();
+        /// <summary>
+        /// 架构中不存在属性 QAFolderID 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public global::System.Guid QAFolderID
+        {
+            get
+            {
+                return this._QAFolderID;
+            }
+            set
+            {
+                this.OnQAFolderIDChanging(value);
+                this.ReportPropertyChanging("QAFolderID");
+                this._QAFolderID = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("QAFolderID");
+                this.OnQAFolderIDChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private global::System.Guid _QAFolderID;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFolderIDChanging(global::System.Guid value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFolderIDChanged();
+        /// <summary>
+        /// 架构中不存在属性 QAFileName 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public string QAFileName
+        {
+            get
+            {
+                return this._QAFileName;
+            }
+            set
+            {
+                this.OnQAFileNameChanging(value);
+                this.ReportPropertyChanging("QAFileName");
+                this._QAFileName = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("QAFileName");
+                this.OnQAFileNameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private string _QAFileName;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFileNameChanging(string value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFileNameChanged();
+        /// <summary>
+        /// 架构中不存在属性 QAFileURL 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public string QAFileURL
+        {
+            get
+            {
+                return this._QAFileURL;
+            }
+            set
+            {
+                this.OnQAFileURLChanging(value);
+                this.ReportPropertyChanging("QAFileURL");
+                this._QAFileURL = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("QAFileURL");
+                this.OnQAFileURLChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private string _QAFileURL;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFileURLChanging(string value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFileURLChanged();
+        /// <summary>
+        /// 架构中不存在属性 FileExtension 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public string FileExtension
+        {
+            get
+            {
+                return this._FileExtension;
+            }
+            set
+            {
+                this.OnFileExtensionChanging(value);
+                this.ReportPropertyChanging("FileExtension");
+                this._FileExtension = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("FileExtension");
+                this.OnFileExtensionChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private string _FileExtension;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnFileExtensionChanging(string value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnFileExtensionChanged();
+        /// <summary>
+        /// 架构中不存在属性 FileSize 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public string FileSize
+        {
+            get
+            {
+                return this._FileSize;
+            }
+            set
+            {
+                this.OnFileSizeChanging(value);
+                this.ReportPropertyChanging("FileSize");
+                this._FileSize = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("FileSize");
+                this.OnFileSizeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private string _FileSize;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnFileSizeChanging(string value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnFileSizeChanged();
+        /// <summary>
+        /// 架构中不存在属性 FileMD5 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public string FileMD5
+        {
+            get
+            {
+                return this._FileMD5;
+            }
+            set
+            {
+                this.OnFileMD5Changing(value);
+                this.ReportPropertyChanging("FileMD5");
+                this._FileMD5 = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("FileMD5");
+                this.OnFileMD5Changed();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private string _FileMD5;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnFileMD5Changing(string value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnFileMD5Changed();
+        /// <summary>
+        /// 架构中不存在属性 CreateAccount 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public string CreateAccount
+        {
+            get
+            {
+                return this._CreateAccount;
+            }
+            set
+            {
+                this.OnCreateAccountChanging(value);
+                this.ReportPropertyChanging("CreateAccount");
+                this._CreateAccount = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("CreateAccount");
+                this.OnCreateAccountChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private string _CreateAccount;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateAccountChanging(string value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateAccountChanged();
+        /// <summary>
+        /// 架构中不存在属性 CreateDateTime 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public global::System.DateTime CreateDateTime
+        {
+            get
+            {
+                return this._CreateDateTime;
+            }
+            set
+            {
+                this.OnCreateDateTimeChanging(value);
+                this.ReportPropertyChanging("CreateDateTime");
+                this._CreateDateTime = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("CreateDateTime");
+                this.OnCreateDateTimeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private global::System.DateTime _CreateDateTime;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateDateTimeChanging(global::System.DateTime value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateDateTimeChanged();
+    }
+    /// <summary>
+    /// 架构中不存在 PCBModel.PCB_QAFolderTB 的注释。
+    /// </summary>
+    /// <KeyProperties>
+    /// QAFolderID
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="PCBModel", Name="PCB_QAFolderTB")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class PCB_QAFolderTB : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// 创建新的 PCB_QAFolderTB 对象。
+        /// </summary>
+        /// <param name="qAFolderID">QAFolderID 的初始值。</param>
+        /// <param name="qAFolderName">QAFolderName 的初始值。</param>
+        /// <param name="createAccount">CreateAccount 的初始值。</param>
+        /// <param name="createDateTime">CreateDateTime 的初始值。</param>
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public static PCB_QAFolderTB CreatePCB_QAFolderTB(global::System.Guid qAFolderID, string qAFolderName, string createAccount, global::System.DateTime createDateTime)
+        {
+            PCB_QAFolderTB pCB_QAFolderTB = new PCB_QAFolderTB();
+            pCB_QAFolderTB.QAFolderID = qAFolderID;
+            pCB_QAFolderTB.QAFolderName = qAFolderName;
+            pCB_QAFolderTB.CreateAccount = createAccount;
+            pCB_QAFolderTB.CreateDateTime = createDateTime;
+            return pCB_QAFolderTB;
+        }
+        /// <summary>
+        /// 架构中不存在属性 QAFolderID 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public global::System.Guid QAFolderID
+        {
+            get
+            {
+                return this._QAFolderID;
+            }
+            set
+            {
+                this.OnQAFolderIDChanging(value);
+                this.ReportPropertyChanging("QAFolderID");
+                this._QAFolderID = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("QAFolderID");
+                this.OnQAFolderIDChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private global::System.Guid _QAFolderID;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFolderIDChanging(global::System.Guid value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFolderIDChanged();
+        /// <summary>
+        /// 架构中不存在属性 QAFolderName 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public string QAFolderName
+        {
+            get
+            {
+                return this._QAFolderName;
+            }
+            set
+            {
+                this.OnQAFolderNameChanging(value);
+                this.ReportPropertyChanging("QAFolderName");
+                this._QAFolderName = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("QAFolderName");
+                this.OnQAFolderNameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private string _QAFolderName;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFolderNameChanging(string value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFolderNameChanged();
+        /// <summary>
+        /// 架构中不存在属性 CreateAccount 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public string CreateAccount
+        {
+            get
+            {
+                return this._CreateAccount;
+            }
+            set
+            {
+                this.OnCreateAccountChanging(value);
+                this.ReportPropertyChanging("CreateAccount");
+                this._CreateAccount = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("CreateAccount");
+                this.OnCreateAccountChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private string _CreateAccount;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateAccountChanging(string value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateAccountChanged();
+        /// <summary>
+        /// 架构中不存在属性 CreateDateTime 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public global::System.DateTime CreateDateTime
+        {
+            get
+            {
+                return this._CreateDateTime;
+            }
+            set
+            {
+                this.OnCreateDateTimeChanging(value);
+                this.ReportPropertyChanging("CreateDateTime");
+                this._CreateDateTime = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("CreateDateTime");
+                this.OnCreateDateTimeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private global::System.DateTime _CreateDateTime;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateDateTimeChanging(global::System.DateTime value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateDateTimeChanged();
+    }
+    /// <summary>
+    /// 架构中不存在 PCBModel.PCB_ShareCodeTB 的注释。
+    /// </summary>
+    /// <KeyProperties>
+    /// ShareCode
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="PCBModel", Name="PCB_ShareCodeTB")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class PCB_ShareCodeTB : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// 创建新的 PCB_ShareCodeTB 对象。
+        /// </summary>
+        /// <param name="shareCode">ShareCode 的初始值。</param>
+        /// <param name="createAccount">CreateAccount 的初始值。</param>
+        /// <param name="qAFolderID">QAFolderID 的初始值。</param>
+        /// <param name="effectDatetime">EffectDatetime 的初始值。</param>
+        /// <param name="createDateTime">CreateDateTime 的初始值。</param>
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public static PCB_ShareCodeTB CreatePCB_ShareCodeTB(string shareCode, string createAccount, global::System.Guid qAFolderID, global::System.DateTime effectDatetime, global::System.DateTime createDateTime)
+        {
+            PCB_ShareCodeTB pCB_ShareCodeTB = new PCB_ShareCodeTB();
+            pCB_ShareCodeTB.ShareCode = shareCode;
+            pCB_ShareCodeTB.CreateAccount = createAccount;
+            pCB_ShareCodeTB.QAFolderID = qAFolderID;
+            pCB_ShareCodeTB.EffectDatetime = effectDatetime;
+            pCB_ShareCodeTB.CreateDateTime = createDateTime;
+            return pCB_ShareCodeTB;
+        }
+        /// <summary>
+        /// 架构中不存在属性 ShareCode 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public string ShareCode
+        {
+            get
+            {
+                return this._ShareCode;
+            }
+            set
+            {
+                this.OnShareCodeChanging(value);
+                this.ReportPropertyChanging("ShareCode");
+                this._ShareCode = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("ShareCode");
+                this.OnShareCodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private string _ShareCode;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnShareCodeChanging(string value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnShareCodeChanged();
+        /// <summary>
+        /// 架构中不存在属性 CreateAccount 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public string CreateAccount
+        {
+            get
+            {
+                return this._CreateAccount;
+            }
+            set
+            {
+                this.OnCreateAccountChanging(value);
+                this.ReportPropertyChanging("CreateAccount");
+                this._CreateAccount = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("CreateAccount");
+                this.OnCreateAccountChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private string _CreateAccount;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateAccountChanging(string value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateAccountChanged();
+        /// <summary>
+        /// 架构中不存在属性 QAFolderID 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public global::System.Guid QAFolderID
+        {
+            get
+            {
+                return this._QAFolderID;
+            }
+            set
+            {
+                this.OnQAFolderIDChanging(value);
+                this.ReportPropertyChanging("QAFolderID");
+                this._QAFolderID = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("QAFolderID");
+                this.OnQAFolderIDChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private global::System.Guid _QAFolderID;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFolderIDChanging(global::System.Guid value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnQAFolderIDChanged();
+        /// <summary>
+        /// 架构中不存在属性 EffectDatetime 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public global::System.DateTime EffectDatetime
+        {
+            get
+            {
+                return this._EffectDatetime;
+            }
+            set
+            {
+                this.OnEffectDatetimeChanging(value);
+                this.ReportPropertyChanging("EffectDatetime");
+                this._EffectDatetime = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("EffectDatetime");
+                this.OnEffectDatetimeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private global::System.DateTime _EffectDatetime;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnEffectDatetimeChanging(global::System.DateTime value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnEffectDatetimeChanged();
+        /// <summary>
+        /// 架构中不存在属性 CreateDateTime 的任何注释。
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        public global::System.DateTime CreateDateTime
+        {
+            get
+            {
+                return this._CreateDateTime;
+            }
+            set
+            {
+                this.OnCreateDateTimeChanging(value);
+                this.ReportPropertyChanging("CreateDateTime");
+                this._CreateDateTime = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("CreateDateTime");
+                this.OnCreateDateTimeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        private global::System.DateTime _CreateDateTime;
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateDateTimeChanging(global::System.DateTime value);
+        [global::System.CodeDom.Compiler.GeneratedCode("System.Data.Entity.Design.EntityClassGenerator", "4.0.0.0")]
+        partial void OnCreateDateTimeChanged();
     }
 }

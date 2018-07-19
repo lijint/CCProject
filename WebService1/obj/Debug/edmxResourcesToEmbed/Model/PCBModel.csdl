@@ -73,5 +73,41 @@
     <EntitySet Name="PCB_EngineerInfo" EntityType="Self.PCB_EngineerInfo" />
     <EntitySet Name="PCB_FileCoverTB" EntityType="Self.PCB_FileCoverTB" />
     <EntitySet Name="PCB_OrderTB" EntityType="Self.PCB_OrderTB" />
+    <EntitySet Name="PCB_QAFileTB" EntityType="PCBModel.PCB_QAFileTB" />
+    <EntitySet Name="PCB_QAFolderTB" EntityType="PCBModel.PCB_QAFolderTB" />
+    <EntitySet Name="PCB_ShareCodeTB" EntityType="PCBModel.PCB_ShareCodeTB" />
   </EntityContainer>
+  <EntityType Name="PCB_QAFileTB">
+    <Key>
+      <PropertyRef Name="QAFileID" />
+    </Key>
+    <Property Name="QAFileID" Type="Guid" Nullable="false" />
+    <Property Name="QAFolderID" Type="Guid" Nullable="false" />
+    <Property Name="QAFileName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="QAFileURL" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FileExtension" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FileSize" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FileMD5" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreateAccount" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="PCB_QAFolderTB">
+    <Key>
+      <PropertyRef Name="QAFolderID" />
+    </Key>
+    <Property Name="QAFolderID" Type="Guid" Nullable="false" />
+    <Property Name="QAFolderName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CreateAccount" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="PCB_ShareCodeTB">
+    <Key>
+      <PropertyRef Name="ShareCode" />
+    </Key>
+    <Property Name="ShareCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreateAccount" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="QAFolderID" Type="Guid" Nullable="false" />
+    <Property Name="EffectDatetime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
 </Schema>
