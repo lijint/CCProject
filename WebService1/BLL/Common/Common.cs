@@ -429,28 +429,34 @@ namespace DownLoad.BLL.Common
             try
             {
                 PCBEntities pCBEntities = new PCBEntities();
-
-                PCB_OrderTB orderTB = new PCB_OrderTB();
-                orderTB.OrderID = System.Guid.NewGuid();
-                orderTB.CreateAccount = account;
-                orderTB.CreateDateTime = DateTime.Now;
                 Guid fid = new Guid(fileCoverId);
-                orderTB.FileCoverID = fid;
-                orderTB.IsPay = false;
-                orderTB.OrderNumber = tradeNO;
-                orderTB.OrderPrice = pCBEntities.PCB_FileCoverTB.FirstOrDefault(p => p.FileCoverID == fid).Price;
-                orderTB.UpdateDateTime = DateTime.Now;
+                var pcborderTBlist = from order in pCBEntities.PCB_OrderTB
+                                     where order.CreateAccount == account && order.FileCoverID == fid
+                                     select order;
+                if (pcborderTBlist.Count() > 0)
+                {
+                    pcborderTBlist.ToList()[0].UpdateDateTime = DateTime.Now;
+                    pcborderTBlist.ToList()[0].OrderNumber = tradeNO;
 
-                //foreach(PCB_OrderTB oTB in pCBEntities.PCB_OrderTB)
-                //{
-                //    if(oTB.CreateAccount == account && oTB.FileCoverID == fid)
-                //    {
-                //        pCBEntities.DeleteObject(oTB);
-                //        pCBEntities.SaveChanges();
-                //    }
-                //}
+                    for (int i = 1; i < pcborderTBlist.Count(); i++)
+                    {
+                        pCBEntities.DeleteObject(pcborderTBlist.ToList()[i]);
+                    }
+                }
+                else
+                {
+                    PCB_OrderTB orderTB = new PCB_OrderTB();
+                    orderTB.OrderID = System.Guid.NewGuid();
+                    orderTB.CreateAccount = account;
+                    orderTB.CreateDateTime = DateTime.Now;
+                    orderTB.FileCoverID = fid;
+                    orderTB.IsPay = false;
+                    orderTB.OrderNumber = tradeNO;
+                    orderTB.OrderPrice = pCBEntities.PCB_FileCoverTB.FirstOrDefault(p => p.FileCoverID == fid).Price;
+                    orderTB.UpdateDateTime = DateTime.Now;
 
-                pCBEntities.AddToPCB_OrderTB(orderTB);
+                    pCBEntities.AddToPCB_OrderTB(orderTB);
+                }
                 result.IsOK = Convert.ToBoolean(pCBEntities.SaveChanges());
             }
             catch (Exception ex)
