@@ -29,25 +29,14 @@ namespace DownLoad.BLL.UpdateFile
         /// </summary>
         /// <returns>返回需要更新的文件更表，格式：名称、大小、路径、版本号、文件内容</returns>
         [WebMethod]
-        public Result GetUpdateFileList(string account)
+        public Result GetUpdateFileList()
         {
             Result result=new Result();
             try
             {
-                PMSEntities pMSEntities = new PMSEntities();
-                Sys_UserTB userTB = pMSEntities.Sys_UserTB.FirstOrDefault(p => p.Account == account&&p.StateCode==true);
-                if (userTB == null)
-                {
-                    result.IsOK = false;
-                    result.Description = "该账号:"+account+ "不存在";
-                    return result;
-                }
-                if (string.IsNullOrEmpty(userTB.FilePermission))
-                {
-                    result.IsOK = true;
-                    result.ExtData="";
-                    return result;
-                }
+              
+               
+               
                 result.IsOK = true;
                 DataTable dt = new DataTable("FileTable");
                 DataColumn column;
@@ -70,20 +59,20 @@ namespace DownLoad.BLL.UpdateFile
                 column.DataType = System.Type.GetType("System.String");
                 column.ColumnName = "FileURL";
                 dt.Columns.Add(column);
-               string updatePath = ParameterAPI.GetConfig("FileDir").ConfigCode;
+               string updatePath = ParameterAPI.GetConfig("ClientDir").ConfigValue;
                 result = Common.Common.GetFileList("", updatePath, ref dt);
-                DataTable newData = dt.Clone();
-                foreach (DataRow item in dt.Rows)
-                {
-                    string fileName= item["FilePath"].ToString().Split('\\')[1];
-                    if (userTB.FilePermission.Contains(fileName))
-                    {
-                        newData.ImportRow(item);
-                    }
-                }
+               // DataTable newData = dt.Clone();
+                //foreach (DataRow item in dt.Rows)
+                //{
+                //    string fileName= item["FilePath"].ToString().Split('\\')[1];
+                //    if (userTB.FilePermission.Contains(fileName))
+                //    {
+                //        newData.ImportRow(item);
+                //    }
+                //}
 
-                result.ExtData = JsonConvert.SerializeObject(newData);
-                // List<xx> xxList= JsonConvert.DeserializeObject<List<xx>>(result.ExtData);
+                result.ExtData = JsonConvert.SerializeObject(dt);
+               
 
             }
             catch (Exception ex)

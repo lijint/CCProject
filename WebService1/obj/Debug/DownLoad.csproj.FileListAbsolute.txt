@@ -49,3 +49,14 @@ E:\Product\lijint-CCProject-master\CCProject-master\WebService1\obj\Debug\DownLo
 E:\Product\lijint-CCProject-master\CCProject-master\WebService1\obj\Debug\DownLoad.csproj.CoreCompileInputs.cache
 E:\Product\lijint-CCProject-master\CCProject-master\WebService1\obj\Debug\WebService1.dll
 E:\Product\lijint-CCProject-master\CCProject-master\WebService1\obj\Debug\WebService1.pdb
+E:\Product\1.2\lijint-CCProject-master\CCProject-master\WebService1\bin\WebService1.dll.config
+E:\Product\1.2\lijint-CCProject-master\CCProject-master\WebService1\bin\WebService1.dll
+E:\Product\1.2\lijint-CCProject-master\CCProject-master\WebService1\bin\WebService1.pdb
+E:\Product\1.2\lijint-CCProject-master\CCProject-master\WebService1\bin\AopSdk.dll
+E:\Product\1.2\lijint-CCProject-master\CCProject-master\WebService1\bin\F2FPayDll.dll
+E:\Product\1.2\lijint-CCProject-master\CCProject-master\WebService1\bin\AopSdk.pdb
+E:\Product\1.2\lijint-CCProject-master\CCProject-master\WebService1\bin\F2FPayDll.pdb
+E:\Product\1.2\lijint-CCProject-master\CCProject-master\WebService1\obj\Debug\DownLoad.csprojResolveAssemblyReference.cache
+E:\Product\1.2\lijint-CCProject-master\CCProject-master\WebService1\obj\Debug\DownLoad.csproj.CoreCompileInputs.cache
+E:\Product\1.2\lijint-CCProject-master\CCProject-master\WebService1\obj\Debug\WebService1.dll
+E:\Product\1.2\lijint-CCProject-master\CCProject-master\WebService1\obj\Debug\WebService1.pdb

@@ -117,7 +117,7 @@ namespace DownLoad.BLL.Common
                 //string url = HttpContext.Current.Request.Url.AbsoluteUri;
                 //  int length = url.IndexOf('/', 7);
                 //string fileUrl = url.Substring(0, length) + @"/" + dir + @"/"; //文件的下载地址
-                string fileUrl = ParameterAPI.GetConfig("FileURLDir").ConfigValue;// "http://172.20.8.24/TIS.ClientUpdateFile";
+                string fileUrl = ParameterAPI.GetConfig("ClientURLDir").ConfigValue;// "http://172.20.8.24/TIS.ClientUpdateFile";
 
 
                 foreach (string item in files)
@@ -125,7 +125,7 @@ namespace DownLoad.BLL.Common
                     DataRow dr = dt.NewRow();
                     //  dr["FileName"] = Path.GetFileName(item);
                     //   dr["FileSize"] = new FileInfo(fileDir + Path.GetFileName(item)).Length;
-                    string dir = ParameterAPI.GetConfig("FileDir").ConfigValue;
+                    string dir = ParameterAPI.GetConfig("ClientDir").ConfigValue;
                     dr["FilePath"] = Path.GetFullPath(item).Remove(0, dir.Length - 1);//string.IsNullOrEmpty(subDir) ? "" : subDir.TrimEnd('\\') + "\\";// fileDir.Substring(fileDir.IndexOf(rootPath) + rootPath.Length, fileDir.Length - rootPath.Length);//.TrimStart(rootPath.ToCharArray());
                     string p = Path.GetFullPath(item);
                     // LogHelper.Write("xxx"+p, LogHelper.LogMessageType.Error, typeof(ClientUpdateWebService));
@@ -186,11 +186,12 @@ namespace DownLoad.BLL.Common
                //实例化一个SmtpClient类。
                SmtpClient client = new SmtpClient();
                 //在这里我使用的是qq邮箱，所以是smtp.qq.com，如果你使用的是126邮箱，那么就是smtp.126.com。
-                client.Host = "smtp.qq.com";
+                string mailHost = ParameterAPI.GetConfig("MailHost").ConfigValue;
+                client.Host = mailHost;
                 //使用安全加密连接。
                 client.EnableSsl = true;
                 //不和请求一块发送。
-                client.Port = 587;
+                client.Port = int.Parse(ParameterAPI.GetConfig("Port").ConfigValue);
                 client.UseDefaultCredentials = false;
                 //验证发件人身份(发件人的邮箱，邮箱里的生成授权码);
                 string pwd = ParameterAPI.GetConfig("SendPWD").ConfigValue;
@@ -213,13 +214,13 @@ namespace DownLoad.BLL.Common
         #endregion
 
         #region 加密字符串  
-        /// <summary> /// 加密字符串   
+        /// <summary> 加密字符串   
         /// </summary>  
         /// <param name="str">要加密的字符串</param>  
         /// <returns>加密后的字符串</returns>  
        public static string Encrypt(string str)
         {
-            string encryptKey = "Oyea";
+            string encryptKey = "PCbK";
             DESCryptoServiceProvider descsp = new DESCryptoServiceProvider();   //实例化加/解密类对象   
 
             byte[] key = Encoding.Unicode.GetBytes(encryptKey); //定义字节数组，用来存储密钥    
@@ -247,7 +248,7 @@ namespace DownLoad.BLL.Common
         /// <returns>解密后的字符串</returns>  
         public static string Decrypt(string str)
         {
-            string encryptKey = "Oyea";
+            string encryptKey = "PCbK";
             DESCryptoServiceProvider descsp = new DESCryptoServiceProvider();   //实例化加/解密类对象    
 
             byte[] key = Encoding.Unicode.GetBytes(encryptKey); //定义字节数组，用来存储密钥    

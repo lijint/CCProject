@@ -73,5 +73,41 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="PCB_QAFileTB">
+      <EntityTypeMapping TypeName="PCBModel.PCB_QAFileTB">
+        <MappingFragment StoreEntitySet="PCB_QAFileTB">
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreateAccount" ColumnName="CreateAccount" />
+          <ScalarProperty Name="FileMD5" ColumnName="FileMD5" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="FileExtension" ColumnName="FileExtension" />
+          <ScalarProperty Name="QAFileURL" ColumnName="QAFileURL" />
+          <ScalarProperty Name="QAFileName" ColumnName="QAFileName" />
+          <ScalarProperty Name="QAFolderID" ColumnName="QAFolderID" />
+          <ScalarProperty Name="QAFileID" ColumnName="QAFileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PCB_QAFolderTB">
+      <EntityTypeMapping TypeName="PCBModel.PCB_QAFolderTB">
+        <MappingFragment StoreEntitySet="PCB_QAFolderTB">
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreateAccount" ColumnName="CreateAccount" />
+          <ScalarProperty Name="QAFolderName" ColumnName="QAFolderName" />
+          <ScalarProperty Name="QAFolderID" ColumnName="QAFolderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PCB_ShareCodeTB">
+      <EntityTypeMapping TypeName="PCBModel.PCB_ShareCodeTB">
+        <MappingFragment StoreEntitySet="PCB_ShareCodeTB">
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="EffectDatetime" ColumnName="EffectDatetime" />
+          <ScalarProperty Name="QAFolderID" ColumnName="QAFolderID" />
+          <ScalarProperty Name="CreateAccount" ColumnName="CreateAccount" />
+          <ScalarProperty Name="ShareCode" ColumnName="ShareCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
